@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cp3vo8s35rpif"]
+[gd_scene load_steps=23 format=3 uid="uid://cp3vo8s35rpif"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_s55e3"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_a8bwu"]
@@ -8,6 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://bqjgobrliw33a" path="res://Assets/ItemSprites/PowerBombTank.png" id="5_rdn1d"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="6_fjvjh"]
 [ext_resource type="Texture2D" uid="uid://crr8iiuc2vmlr" path="res://Assets/ItemSprites/PowerGrip.png" id="7_dhqo2"]
+[ext_resource type="Texture2D" uid="uid://jft5er1qv2xp" path="res://Assets/ItemSprites/UnknownPlasmaBeam.png" id="8_hx8j3"]
+[ext_resource type="Texture2D" uid="uid://ds6rld2pdsmtc" path="res://Assets/ItemSprites/SuperMissileTank.png" id="9_4ypbe"]
+[ext_resource type="PackedScene" uid="uid://colr1p5vww08d" path="res://Scenes/Maps/Brinstar.tscn" id="11_btw0e"]
+[ext_resource type="PackedScene" uid="uid://clrkyr3l8j3bp" path="res://Scenes/Maps/Norfair.tscn" id="12_ugqfx"]
+[ext_resource type="PackedScene" uid="uid://d3xrxxmlj4mj6" path="res://Scenes/Maps/Tourian.tscn" id="13_kor8b"]
+[ext_resource type="PackedScene" uid="uid://c2lfsupnovvw" path="res://Scenes/Maps/Chozodia.tscn" id="14_82q83"]
 
 [sub_resource type="Resource" id="Resource_2yuwq"]
 resource_local_to_scene = true
@@ -39,17 +45,17 @@ location_name = "Statue Water"
 [sub_resource type="Resource" id="Resource_md1hf"]
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
-location_name = ""
+location_name = "Plasma Beam"
 
 [sub_resource type="Resource" id="Resource_7rlfr"]
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
-location_name = ""
+location_name = "East Ballspark"
 
 [sub_resource type="Resource" id="Resource_08rmm"]
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
-location_name = ""
+location_name = "Northeast Corner"
 
 [node name="Crateria" instance=ExtResource("1_s55e3")]
 texture = ExtResource("2_dajr5")
@@ -73,29 +79,36 @@ data = SubResource("Resource_1p2mh")
 position = Vector2(144, 40)
 data = SubResource("Resource_x5i63")
 
-[node name="Location5" parent="." index="4" instance=ExtResource("4_onid7")]
+[node name="Plasma Beam" parent="." index="4" instance=ExtResource("4_onid7")]
 position = Vector2(152, 40)
+texture = ExtResource("8_hx8j3")
 data = SubResource("Resource_md1hf")
 
-[node name="Location6" parent="." index="5" instance=ExtResource("4_onid7")]
+[node name="East Ballspark" parent="." index="5" instance=ExtResource("4_onid7")]
 position = Vector2(160, 40)
 data = SubResource("Resource_7rlfr")
 
-[node name="Location7" parent="." index="6" instance=ExtResource("4_onid7")]
+[node name="Northeast Corner" parent="." index="6" instance=ExtResource("4_onid7")]
 position = Vector2(168, 16)
+texture = ExtResource("9_4ypbe")
 data = SubResource("Resource_08rmm")
 
-[node name="MapPeek" parent="." index="7" instance=ExtResource("6_fjvjh")]
+[node name="PeekBrinstar" parent="." index="7" instance=ExtResource("6_fjvjh")]
 position = Vector2(64, 104)
+map = ExtResource("11_btw0e")
 
-[node name="MapPeek2" parent="." index="8" instance=ExtResource("6_fjvjh")]
+[node name="PeekNorfair" parent="." index="8" instance=ExtResource("6_fjvjh")]
 position = Vector2(112, 80)
+map = ExtResource("12_ugqfx")
 
-[node name="MapPeek3" parent="." index="9" instance=ExtResource("6_fjvjh")]
+[node name="PeekTourian" parent="." index="9" instance=ExtResource("6_fjvjh")]
 position = Vector2(16, 120)
+map = ExtResource("13_kor8b")
 
-[node name="MapPeek4" parent="." index="10" instance=ExtResource("6_fjvjh")]
+[node name="PeekChozodia" parent="." index="10" instance=ExtResource("6_fjvjh")]
 position = Vector2(200, 32)
+map = ExtResource("14_82q83")
 
-[node name="MapPeek5" parent="." index="11" instance=ExtResource("6_fjvjh")]
+[node name="PeekChozodia2" parent="." index="11" instance=ExtResource("6_fjvjh")]
 position = Vector2(200, 64)
+map = ExtResource("14_82q83")
