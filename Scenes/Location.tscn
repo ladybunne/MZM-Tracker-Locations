@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://lppkt3yjkrmv"]
+
+[ext_resource type="Texture2D" uid="uid://doekv2dg38vmu" path="res://Assets/ItemSprites/MissileTank.png" id="1_bul4g"]
+[ext_resource type="Script" path="res://Scenes/Location.gd" id="1_mrgfl"]
+[ext_resource type="Resource" uid="uid://dusswx1eokw37" path="res://Assets/Data/DefaultLocationData.tres" id="3_05agv"]
+
+[sub_resource type="Gradient" id="Gradient_r6bmw"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5jf5r"]
+gradient = SubResource("Gradient_r6bmw")
+width = 16
+height = 16
+
+[node name="Location" type="Sprite2D"]
+z_index = 1
+texture_filter = 1
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_bul4g")
+centered = false
+script = ExtResource("1_mrgfl")
+data = ExtResource("3_05agv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_as_relative = false
+texture = SubResource("GradientTexture2D_5jf5r")
+centered = false

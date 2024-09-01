@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://uuxs4u4glabr"]
+
+[ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_tvprs"]
+[ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_bvs4j"]
+[ext_resource type="Texture2D" uid="uid://b0atvbvmq23t8" path="res://Assets/MapSprites/KraidMap.png" id="2_thkra"]
+
+[sub_resource type="Resource" id="Resource_jusrk"]
+resource_local_to_scene = true
+script = ExtResource("2_bvs4j")
+map_name = "Kraid"
+unopened_img = ""
+opened_img = ""
+
+[node name="Kraid" instance=ExtResource("1_tvprs")]
+texture = ExtResource("2_thkra")
+data = SubResource("Resource_jusrk")
+metadata/_edit_lock_ = true

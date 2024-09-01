@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="MapData" load_steps=2 format=3 uid="uid://desnid6n0bxmt"]
+
+[ext_resource type="Script" path="res://Scripts/MapData.gd" id="1_7p1lf"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_7p1lf")
+map_name = ""
+unopened_img = ""
+opened_img = ""

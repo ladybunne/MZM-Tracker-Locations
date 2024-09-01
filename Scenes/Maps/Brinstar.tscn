@@ -1,0 +1,235 @@
+[gd_scene load_steps=39 format=3 uid="uid://colr1p5vww08d"]
+
+[ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_ldihg"]
+[ext_resource type="Texture2D" uid="uid://p1fdkbsxndw0" path="res://Assets/MapSprites/BrinstarMap.png" id="2_1sxm6"]
+[ext_resource type="PackedScene" uid="uid://lppkt3yjkrmv" path="res://Scenes/Location.tscn" id="3_5gl4p"]
+[ext_resource type="Script" path="res://Scripts/MapData.gd" id="3_d5qit"]
+[ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="4_6i1tl"]
+[ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_u1hm1"]
+[ext_resource type="PackedScene" uid="uid://uuxs4u4glabr" path="res://Scenes/Maps/Kraid.tscn" id="6_n6os3"]
+[ext_resource type="Texture2D" uid="uid://cxfkrqbbgs0m3" path="res://Assets/ItemSprites/MorphBall.png" id="7_xsd1h"]
+[ext_resource type="Texture2D" uid="uid://c5n1ocow210aj" path="res://Assets/ItemSprites/EnergyTank.png" id="9_72rs1"]
+[ext_resource type="Texture2D" uid="uid://bmfqojikroesw" path="res://Assets/ItemSprites/LongBeam.png" id="10_typ2e"]
+[ext_resource type="Texture2D" uid="uid://ds6rld2pdsmtc" path="res://Assets/ItemSprites/SuperMissileTank.png" id="11_xv4p8"]
+[ext_resource type="Texture2D" uid="uid://dspst7rb36rw0" path="res://Assets/ItemSprites/VariaSuit.png" id="12_qjmlp"]
+[ext_resource type="Texture2D" uid="uid://deq4yrpoc2lcx" path="res://Assets/ItemSprites/ChargeBeam.png" id="12_utfhj"]
+[ext_resource type="Texture2D" uid="uid://54fn27l8xj1x" path="res://Assets/ItemSprites/Bomb.png" id="13_3c0u7"]
+[ext_resource type="PackedScene" uid="uid://clrkyr3l8j3bp" path="res://Scenes/Maps/Norfair.tscn" id="15_o6vc8"]
+[ext_resource type="PackedScene" uid="uid://d3xrxxmlj4mj6" path="res://Scenes/Maps/Tourian.tscn" id="16_y4sda"]
+[ext_resource type="PackedScene" uid="uid://cp3vo8s35rpif" path="res://Scenes/Maps/Crateria.tscn" id="17_xridc"]
+
+[sub_resource type="Resource" id="Resource_ne3uo"]
+resource_local_to_scene = true
+script = ExtResource("3_d5qit")
+map_name = "Brinstar"
+unopened_img = ""
+opened_img = ""
+
+[sub_resource type="Resource" id="Resource_0yiat"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Morph Ball"
+
+[sub_resource type="Resource" id="Resource_ywy62"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Morph Ball Cannon"
+
+[sub_resource type="Resource" id="Resource_toxxt"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Ceiling E-Tank"
+
+[sub_resource type="Resource" id="Resource_y07h5"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Long Beam"
+
+[sub_resource type="Resource" id="Resource_uetk3"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Missile Above Super"
+
+[sub_resource type="Resource" id="Resource_w5eps"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Super Missile"
+
+[sub_resource type="Resource" id="Resource_t8m8m"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Speed Booster Shortcut Missile"
+
+[sub_resource type="Resource" id="Resource_sncws"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "First Missile"
+
+[sub_resource type="Resource" id="Resource_q7y0h"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Under Bridge"
+
+[sub_resource type="Resource" id="Resource_b1i37"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Behind Hive"
+
+[sub_resource type="Resource" id="Resource_lkss7"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Top Missile"
+
+[sub_resource type="Resource" id="Resource_jtlmc"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Varia Suit"
+
+[sub_resource type="Resource" id="Resource_fnjsh"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Acid Near Varia"
+
+[sub_resource type="Resource" id="Resource_2nq7j"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Upper Pillar Missile"
+
+[sub_resource type="Resource" id="Resource_ok2gr"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Behind Bombs"
+
+[sub_resource type="Resource" id="Resource_81fef"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Bomb"
+
+[sub_resource type="Resource" id="Resource_rp7ac"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Post-Hive Missile"
+
+[sub_resource type="Resource" id="Resource_b6l6q"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Post-Hive E-Tank"
+
+[sub_resource type="Resource" id="Resource_2mcno"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Worm Drop"
+
+[sub_resource type="Resource" id="Resource_8vpem"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Worm Drop"
+
+[node name="Brinstar" instance=ExtResource("1_ldihg")]
+texture = ExtResource("2_1sxm6")
+data = SubResource("Resource_ne3uo")
+
+[node name="Morph Ball" parent="." index="0" instance=ExtResource("3_5gl4p")]
+position = Vector2(8, 112)
+texture = ExtResource("7_xsd1h")
+data = SubResource("Resource_0yiat")
+
+[node name="Morph Ball Cannon" parent="." index="1" instance=ExtResource("3_5gl4p")]
+position = Vector2(48, 104)
+data = SubResource("Resource_ywy62")
+
+[node name="Ceiling E-Tank" parent="." index="2" instance=ExtResource("3_5gl4p")]
+position = Vector2(64, 112)
+texture = ExtResource("9_72rs1")
+data = SubResource("Resource_toxxt")
+
+[node name="Long Beam" parent="." index="3" instance=ExtResource("3_5gl4p")]
+position = Vector2(56, 40)
+texture = ExtResource("10_typ2e")
+data = SubResource("Resource_y07h5")
+
+[node name="Missile Above Super" parent="." index="4" instance=ExtResource("3_5gl4p")]
+position = Vector2(80, 80)
+data = SubResource("Resource_uetk3")
+
+[node name="Super Missile" parent="." index="5" instance=ExtResource("3_5gl4p")]
+position = Vector2(80, 88)
+texture = ExtResource("11_xv4p8")
+data = SubResource("Resource_w5eps")
+
+[node name="Speed Booster Shortcut Missile" parent="." index="6" instance=ExtResource("3_5gl4p")]
+position = Vector2(96, 88)
+data = SubResource("Resource_t8m8m")
+
+[node name="First Missile" parent="." index="7" instance=ExtResource("3_5gl4p")]
+position = Vector2(136, 88)
+data = SubResource("Resource_sncws")
+
+[node name="Under Bridge" parent="." index="8" instance=ExtResource("3_5gl4p")]
+position = Vector2(144, 72)
+data = SubResource("Resource_q7y0h")
+
+[node name="Behind Hive" parent="." index="9" instance=ExtResource("3_5gl4p")]
+position = Vector2(144, 48)
+data = SubResource("Resource_b1i37")
+
+[node name="Top Missile" parent="." index="10" instance=ExtResource("3_5gl4p")]
+position = Vector2(96, 16)
+data = SubResource("Resource_lkss7")
+
+[node name="Varia Suit" parent="." index="11" instance=ExtResource("3_5gl4p")]
+position = Vector2(120, 8)
+texture = ExtResource("12_qjmlp")
+data = SubResource("Resource_jtlmc")
+
+[node name="Acid Near Varia" parent="." index="12" instance=ExtResource("3_5gl4p")]
+position = Vector2(136, 16)
+data = SubResource("Resource_fnjsh")
+
+[node name="Upper Pillar Missile" parent="." index="13" instance=ExtResource("3_5gl4p")]
+position = Vector2(192, 24)
+data = SubResource("Resource_2nq7j")
+
+[node name="Behind Bombs" parent="." index="14" instance=ExtResource("3_5gl4p")]
+position = Vector2(192, 40)
+data = SubResource("Resource_ok2gr")
+
+[node name="Bomb" parent="." index="15" instance=ExtResource("3_5gl4p")]
+position = Vector2(200, 40)
+texture = ExtResource("13_3c0u7")
+data = SubResource("Resource_81fef")
+
+[node name="Post-Hive Missile" parent="." index="16" instance=ExtResource("3_5gl4p")]
+position = Vector2(184, 56)
+data = SubResource("Resource_rp7ac")
+
+[node name="Post-Hive E-Tank" parent="." index="17" instance=ExtResource("3_5gl4p")]
+position = Vector2(200, 56)
+texture = ExtResource("9_72rs1")
+data = SubResource("Resource_b6l6q")
+
+[node name="Worm Drop" parent="." index="18" instance=ExtResource("3_5gl4p")]
+position = Vector2(120, 88)
+texture = ExtResource("12_utfhj")
+data = SubResource("Resource_2mcno")
+
+[node name="Worm Drop2" parent="." index="19" instance=ExtResource("3_5gl4p")]
+position = Vector2(192, 56)
+texture = ExtResource("12_utfhj")
+data = SubResource("Resource_8vpem")
+
+[node name="PeekKraid" parent="." index="20" instance=ExtResource("4_6i1tl")]
+position = Vector2(56, 160)
+map = ExtResource("6_n6os3")
+
+[node name="PeekNorfair" parent="." index="21" instance=ExtResource("4_6i1tl")]
+position = Vector2(184, 112)
+map = ExtResource("15_o6vc8")
+
+[node name="PeekTourian" parent="." index="22" instance=ExtResource("4_6i1tl")]
+position = Vector2(16, 40)
+map = ExtResource("16_y4sda")
+
+[node name="PeekCrateria" parent="." index="23" instance=ExtResource("4_6i1tl")]
+position = Vector2(24, 80)
+map = ExtResource("17_xridc")

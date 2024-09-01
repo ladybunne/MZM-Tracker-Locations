@@ -1,0 +1,14 @@
+@tool
+class_name MapData extends Resource
+
+@export var map_name: String :
+	set(p_map_name):
+		map_name = p_map_name
+		map_name_changed.emit(map_name)
+@export var unopened_img: String
+@export var opened_img: String
+
+signal map_name_changed(p_map_name: String)
+
+func get_children():
+	pass

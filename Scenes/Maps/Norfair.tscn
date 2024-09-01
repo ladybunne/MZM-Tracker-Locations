@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://clrkyr3l8j3bp"]
+
+[ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_o36ia"]
+[ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_h4uth"]
+[ext_resource type="Texture2D" uid="uid://civ87m01axc58" path="res://Assets/MapSprites/NorfairMap.png" id="2_ss6af"]
+
+[sub_resource type="Resource" id="Resource_0sexs"]
+resource_local_to_scene = true
+script = ExtResource("2_h4uth")
+map_name = "Norfair"
+unopened_img = ""
+opened_img = ""
+
+[node name="Norfair" instance=ExtResource("1_o36ia")]
+texture = ExtResource("2_ss6af")
+data = SubResource("Resource_0sexs")
+metadata/_edit_lock_ = true

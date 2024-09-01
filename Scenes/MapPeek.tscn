@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0hckmwa6nt8v"]
+
+[ext_resource type="Texture2D" uid="uid://ccq5kutxfuemm" path="res://Assets/speed_icon.png" id="1_s58d0"]
+[ext_resource type="Script" path="res://Scenes/MapPeek.gd" id="2_vbr84"]
+
+[node name="MapPeek" type="Sprite2D"]
+texture_filter = 1
+scale = Vector2(0.031, 0.031)
+texture = ExtResource("1_s58d0")
+centered = false
+script = ExtResource("2_vbr84")
