@@ -1,9 +1,11 @@
-[gd_scene load_steps=19 format=3 uid="uid://cp3vo8s35rpif"]
+[gd_scene load_steps=21 format=3 uid="uid://cp3vo8s35rpif"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_s55e3"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_a8bwu"]
 [ext_resource type="Texture2D" uid="uid://dycnlbubiwpdg" path="res://Assets/MapSprites/CrateriaMap.png" id="2_dajr5"]
+[ext_resource type="Texture2D" uid="uid://cwiiyutvbja4a" path="res://Assets/ItemSprites/Checked.png" id="3_wy536"]
 [ext_resource type="PackedScene" uid="uid://lppkt3yjkrmv" path="res://Scenes/Location.tscn" id="4_onid7"]
+[ext_resource type="Texture2D" uid="uid://doekv2dg38vmu" path="res://Assets/ItemSprites/MissileTank.png" id="5_clyk1"]
 [ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_er1hj"]
 [ext_resource type="Texture2D" uid="uid://bqjgobrliw33a" path="res://Assets/ItemSprites/PowerBombTank.png" id="5_rdn1d"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="6_fjvjh"]
@@ -15,8 +17,8 @@
 resource_local_to_scene = true
 script = ExtResource("2_a8bwu")
 map_name = "Crateria"
-unopened_img = ""
-opened_img = ""
+unopened_img = ExtResource("5_clyk1")
+opened_img = ExtResource("3_wy536")
 
 [sub_resource type="Resource" id="Resource_40hab"]
 resource_local_to_scene = true
@@ -91,20 +93,20 @@ data = SubResource("Resource_08rmm")
 
 [node name="PeekBrinstar" parent="." index="7" instance=ExtResource("6_fjvjh")]
 position = Vector2(64, 104)
-map = "Brinstar"
+to = "Brinstar"
 
 [node name="PeekNorfair" parent="." index="8" instance=ExtResource("6_fjvjh")]
 position = Vector2(112, 80)
-map = "Norfair"
+to = "Norfair"
 
 [node name="PeekTourian" parent="." index="9" instance=ExtResource("6_fjvjh")]
 position = Vector2(16, 120)
-map = "Tourian"
+to = "Tourian"
 
 [node name="PeekChozodia" parent="." index="10" instance=ExtResource("6_fjvjh")]
 position = Vector2(200, 32)
-map = "Chozodia"
+to = "Chozodia"
 
 [node name="PeekChozodia2" parent="." index="11" instance=ExtResource("6_fjvjh")]
 position = Vector2(200, 64)
-map = "Chozodia"
+to = "Chozodia"

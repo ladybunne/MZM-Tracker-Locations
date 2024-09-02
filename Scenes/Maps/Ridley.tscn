@@ -1,10 +1,12 @@
-[gd_scene load_steps=31 format=3 uid="uid://dq87ok8tonyx0"]
+[gd_scene load_steps=33 format=3 uid="uid://dq87ok8tonyx0"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_46tpm"]
 [ext_resource type="Texture2D" uid="uid://cgm00yftj7iq4" path="res://Assets/MapSprites/RidleyMap.png" id="2_3n0xj"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_gurvp"]
+[ext_resource type="Texture2D" uid="uid://cwiiyutvbja4a" path="res://Assets/ItemSprites/Checked.png" id="3_su1uf"]
 [ext_resource type="PackedScene" uid="uid://lppkt3yjkrmv" path="res://Scenes/Location.tscn" id="4_uupy5"]
 [ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_210y0"]
+[ext_resource type="Texture2D" uid="uid://doekv2dg38vmu" path="res://Assets/ItemSprites/MissileTank.png" id="5_jkd2o"]
 [ext_resource type="Texture2D" uid="uid://c5n1ocow210aj" path="res://Assets/ItemSprites/EnergyTank.png" id="6_6ilp7"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="6_notjh"]
 [ext_resource type="Texture2D" uid="uid://dx4dasd2jh318" path="res://Assets/ItemSprites/UnknownGravitySuit.png" id="7_nlwwu"]
@@ -14,8 +16,8 @@
 resource_local_to_scene = true
 script = ExtResource("2_gurvp")
 map_name = "Ridley"
-unopened_img = ""
-opened_img = ""
+unopened_img = ExtResource("5_jkd2o")
+opened_img = ExtResource("3_su1uf")
 
 [sub_resource type="Resource" id="Resource_l2qbx"]
 resource_local_to_scene = true
@@ -210,4 +212,4 @@ data = SubResource("Resource_rqylw")
 
 [node name="PeekNorfair" parent="." index="20" instance=ExtResource("6_notjh")]
 position = Vector2(112, 8)
-map = "Norfair"
+to = "Norfair"

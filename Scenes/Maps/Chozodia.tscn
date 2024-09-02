@@ -1,11 +1,13 @@
-[gd_scene load_steps=29 format=3 uid="uid://c2lfsupnovvw"]
+[gd_scene load_steps=31 format=3 uid="uid://c2lfsupnovvw"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_lk3hk"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_c1s0e"]
 [ext_resource type="Texture2D" uid="uid://b5bt8leqx38q5" path="res://Assets/MapSprites/ChozodiaMap.png" id="2_y4w0f"]
+[ext_resource type="Texture2D" uid="uid://cwiiyutvbja4a" path="res://Assets/ItemSprites/Checked.png" id="3_obshp"]
 [ext_resource type="PackedScene" uid="uid://lppkt3yjkrmv" path="res://Scenes/Location.tscn" id="4_lq8bi"]
 [ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_1cdgr"]
 [ext_resource type="Texture2D" uid="uid://bqjgobrliw33a" path="res://Assets/ItemSprites/PowerBombTank.png" id="5_m3j6e"]
+[ext_resource type="Texture2D" uid="uid://doekv2dg38vmu" path="res://Assets/ItemSprites/MissileTank.png" id="5_r5hc6"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="6_pi4vb"]
 [ext_resource type="Texture2D" uid="uid://ds6rld2pdsmtc" path="res://Assets/ItemSprites/SuperMissileTank.png" id="7_bmelt"]
 [ext_resource type="Texture2D" uid="uid://c5n1ocow210aj" path="res://Assets/ItemSprites/EnergyTank.png" id="8_kon32"]
@@ -14,8 +16,8 @@
 resource_local_to_scene = true
 script = ExtResource("2_c1s0e")
 map_name = "Chozodia"
-unopened_img = ""
-opened_img = ""
+unopened_img = ExtResource("5_r5hc6")
+opened_img = ExtResource("3_obshp")
 
 [sub_resource type="Resource" id="Resource_isobl"]
 resource_local_to_scene = true
@@ -202,8 +204,8 @@ data = SubResource("Resource_4ub7e")
 
 [node name="PeekCrateria" parent="." index="18" instance=ExtResource("6_pi4vb")]
 position = Vector2(8, 144)
-map = "Crateria"
+to = "Crateria"
 
 [node name="PeekCrateria2" parent="." index="19" instance=ExtResource("6_pi4vb")]
 position = Vector2(8, 176)
-map = "Crateria"
+to = "Crateria"

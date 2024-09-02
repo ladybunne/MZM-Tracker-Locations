@@ -1,9 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://d3xrxxmlj4mj6"]
+[gd_scene load_steps=13 format=3 uid="uid://d3xrxxmlj4mj6"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_ld82v"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_tyvjl"]
 [ext_resource type="Texture2D" uid="uid://d2qatyndqkdsc" path="res://Assets/MapSprites/TourianMap.png" id="2_xxns0"]
+[ext_resource type="Texture2D" uid="uid://cwiiyutvbja4a" path="res://Assets/ItemSprites/Checked.png" id="3_yhqa0"]
 [ext_resource type="PackedScene" uid="uid://lppkt3yjkrmv" path="res://Scenes/Location.tscn" id="4_ub1lm"]
+[ext_resource type="Texture2D" uid="uid://doekv2dg38vmu" path="res://Assets/ItemSprites/MissileTank.png" id="5_28r7w"]
 [ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_iixt6"]
 [ext_resource type="Texture2D" uid="uid://bqjgobrliw33a" path="res://Assets/ItemSprites/PowerBombTank.png" id="6_8bbv0"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="7_oj1u8"]
@@ -12,8 +14,8 @@
 resource_local_to_scene = true
 script = ExtResource("2_tyvjl")
 map_name = "Tourian"
-unopened_img = ""
-opened_img = ""
+unopened_img = ExtResource("5_28r7w")
+opened_img = ExtResource("3_yhqa0")
 
 [sub_resource type="Resource" id="Resource_6t0wf"]
 resource_local_to_scene = true
@@ -40,8 +42,8 @@ data = SubResource("Resource_ehict")
 
 [node name="PeekBrinstar" parent="." index="2" instance=ExtResource("7_oj1u8")]
 position = Vector2(40, 16)
-map = "Brinstar"
+to = "Brinstar"
 
 [node name="PeekCrateria" parent="." index="3" instance=ExtResource("7_oj1u8")]
 position = Vector2(16, 8)
-map = "Crateria"
+to = "Crateria"

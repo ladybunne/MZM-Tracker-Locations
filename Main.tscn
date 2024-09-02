@@ -1,3 +1,102 @@
-[gd_scene format=3 uid="uid://5jufrjma1ae"]
+[gd_scene load_steps=19 format=3 uid="uid://5jufrjma1ae"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_goddx"]
+[ext_resource type="PackedScene" uid="uid://colr1p5vww08d" path="res://Scenes/Maps/Brinstar.tscn" id="2_g5r1v"]
+[ext_resource type="Script" path="res://Scripts/MapData.gd" id="3_3bd2g"]
+[ext_resource type="Texture2D" uid="uid://cwiiyutvbja4a" path="res://Assets/ItemSprites/Checked.png" id="3_xsx6o"]
+[ext_resource type="PackedScene" uid="uid://c2lfsupnovvw" path="res://Scenes/Maps/Chozodia.tscn" id="4_vvghj"]
+[ext_resource type="PackedScene" uid="uid://cp3vo8s35rpif" path="res://Scenes/Maps/Crateria.tscn" id="5_bj0rq"]
+[ext_resource type="Texture2D" uid="uid://doekv2dg38vmu" path="res://Assets/ItemSprites/MissileTank.png" id="5_xjpnx"]
+[ext_resource type="PackedScene" uid="uid://uuxs4u4glabr" path="res://Scenes/Maps/Kraid.tscn" id="6_bosu1"]
+[ext_resource type="PackedScene" uid="uid://clrkyr3l8j3bp" path="res://Scenes/Maps/Norfair.tscn" id="7_8sy46"]
+[ext_resource type="PackedScene" uid="uid://dq87ok8tonyx0" path="res://Scenes/Maps/Ridley.tscn" id="8_iigcc"]
+[ext_resource type="PackedScene" uid="uid://d3xrxxmlj4mj6" path="res://Scenes/Maps/Tourian.tscn" id="9_im7il"]
+
+[sub_resource type="Resource" id="Resource_fm11j"]
+resource_local_to_scene = true
+script = ExtResource("3_3bd2g")
+map_name = "Brinstar"
+unopened_img = ExtResource("5_xjpnx")
+opened_img = ExtResource("3_xsx6o")
+
+[sub_resource type="Resource" id="Resource_fxffk"]
+resource_local_to_scene = true
+script = ExtResource("3_3bd2g")
+map_name = "Kraid"
+unopened_img = ExtResource("5_xjpnx")
+opened_img = ExtResource("3_xsx6o")
+
+[sub_resource type="Resource" id="Resource_7qpsp"]
+resource_local_to_scene = true
+script = ExtResource("3_3bd2g")
+map_name = "Norfair"
+unopened_img = ExtResource("5_xjpnx")
+opened_img = ExtResource("3_xsx6o")
+
+[sub_resource type="Resource" id="Resource_jahxr"]
+resource_local_to_scene = true
+script = ExtResource("3_3bd2g")
+map_name = "Ridley"
+unopened_img = ExtResource("5_xjpnx")
+opened_img = ExtResource("3_xsx6o")
+
+[sub_resource type="Resource" id="Resource_1oqmy"]
+resource_local_to_scene = true
+script = ExtResource("3_3bd2g")
+map_name = "Tourian"
+unopened_img = ExtResource("5_xjpnx")
+opened_img = ExtResource("3_xsx6o")
+
+[sub_resource type="Resource" id="Resource_fwgbe"]
+resource_local_to_scene = true
+script = ExtResource("3_3bd2g")
+map_name = "Crateria"
+unopened_img = ExtResource("5_xjpnx")
+opened_img = ExtResource("3_xsx6o")
+
+[sub_resource type="Resource" id="Resource_cxp8x"]
+resource_local_to_scene = true
+script = ExtResource("3_3bd2g")
+map_name = "Chozodia"
+unopened_img = ExtResource("5_xjpnx")
+opened_img = ExtResource("3_xsx6o")
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_goddx")
+maps = {
+"Brinstar": NodePath("Brinstar"),
+"Chozodia": NodePath("Chozodia"),
+"Crateria": NodePath("Crateria"),
+"Kraid": NodePath("Kraid"),
+"Norfair": NodePath("Norfair"),
+"Ridley": NodePath("Ridley"),
+"Tourian": NodePath("Tourian")
+}
+
+[node name="Brinstar" parent="." instance=ExtResource("2_g5r1v")]
+position = Vector2(104, 232)
+data = SubResource("Resource_fm11j")
+
+[node name="Kraid" parent="." instance=ExtResource("6_bosu1")]
+position = Vector2(80, 400)
+data = SubResource("Resource_fxffk")
+
+[node name="Norfair" parent="." instance=ExtResource("7_8sy46")]
+position = Vector2(184, 352)
+data = SubResource("Resource_7qpsp")
+
+[node name="Ridley" parent="." instance=ExtResource("8_iigcc")]
+position = Vector2(200, 488)
+data = SubResource("Resource_jahxr")
+
+[node name="Tourian" parent="." instance=ExtResource("9_im7il")]
+position = Vector2(0, 208)
+data = SubResource("Resource_1oqmy")
+
+[node name="Crateria" parent="." instance=ExtResource("5_bj0rq")]
+position = Vector2(64, 120)
+data = SubResource("Resource_fwgbe")
+
+[node name="Chozodia" parent="." instance=ExtResource("4_vvghj")]
+position = Vector2(288, 0)
+data = SubResource("Resource_cxp8x")

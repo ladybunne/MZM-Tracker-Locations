@@ -1,9 +1,11 @@
-[gd_scene load_steps=24 format=3 uid="uid://uuxs4u4glabr"]
+[gd_scene load_steps=26 format=3 uid="uid://uuxs4u4glabr"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_tvprs"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_bvs4j"]
 [ext_resource type="Texture2D" uid="uid://b0atvbvmq23t8" path="res://Assets/MapSprites/KraidMap.png" id="2_thkra"]
+[ext_resource type="Texture2D" uid="uid://cwiiyutvbja4a" path="res://Assets/ItemSprites/Checked.png" id="3_v7tgj"]
 [ext_resource type="PackedScene" uid="uid://lppkt3yjkrmv" path="res://Scenes/Location.tscn" id="4_3tq45"]
+[ext_resource type="Texture2D" uid="uid://doekv2dg38vmu" path="res://Assets/ItemSprites/MissileTank.png" id="5_286hx"]
 [ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_w7tn0"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="6_av42j"]
 [ext_resource type="Texture2D" uid="uid://b4qjc7qn5mpmq" path="res://Assets/ItemSprites/UnknownSpaceJump.png" id="6_yxr82"]
@@ -14,8 +16,8 @@
 resource_local_to_scene = true
 script = ExtResource("2_bvs4j")
 map_name = "Kraid"
-unopened_img = ""
-opened_img = ""
+unopened_img = ExtResource("5_286hx")
+opened_img = ExtResource("3_v7tgj")
 
 [sub_resource type="Resource" id="Resource_ewj3u"]
 resource_local_to_scene = true
@@ -144,8 +146,8 @@ data = SubResource("Resource_0sj5u")
 
 [node name="PeekBrinstar" parent="." index="13" instance=ExtResource("6_av42j")]
 position = Vector2(56, 16)
-map = "Brinstar"
+to = "Brinstar"
 
 [node name="PeekNorfair" parent="." index="14" instance=ExtResource("6_av42j")]
 position = Vector2(144, 72)
-map = "Norfair"
+to = "Norfair"

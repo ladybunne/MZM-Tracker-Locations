@@ -5,10 +5,7 @@ class_name MapData extends Resource
 	set(p_map_name):
 		map_name = p_map_name
 		map_name_changed.emit(map_name)
-@export var unopened_img: String
-@export var opened_img: String
+@export var unopened_img: Texture2D
+@export var opened_img: Texture2D
 
 signal map_name_changed(p_map_name: String)
-
-func get_children():
-	pass

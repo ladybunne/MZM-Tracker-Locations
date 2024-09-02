@@ -1,10 +1,12 @@
-[gd_scene load_steps=35 format=3 uid="uid://colr1p5vww08d"]
+[gd_scene load_steps=37 format=3 uid="uid://colr1p5vww08d"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_ldihg"]
 [ext_resource type="Texture2D" uid="uid://p1fdkbsxndw0" path="res://Assets/MapSprites/BrinstarMap.png" id="2_1sxm6"]
+[ext_resource type="Texture2D" uid="uid://cwiiyutvbja4a" path="res://Assets/ItemSprites/Checked.png" id="3_0fhul"]
 [ext_resource type="PackedScene" uid="uid://lppkt3yjkrmv" path="res://Scenes/Location.tscn" id="3_5gl4p"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="3_d5qit"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="4_6i1tl"]
+[ext_resource type="Texture2D" uid="uid://doekv2dg38vmu" path="res://Assets/ItemSprites/MissileTank.png" id="5_c5p8t"]
 [ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_u1hm1"]
 [ext_resource type="Texture2D" uid="uid://cxfkrqbbgs0m3" path="res://Assets/ItemSprites/MorphBall.png" id="7_xsd1h"]
 [ext_resource type="Texture2D" uid="uid://c5n1ocow210aj" path="res://Assets/ItemSprites/EnergyTank.png" id="9_72rs1"]
@@ -18,8 +20,8 @@
 resource_local_to_scene = true
 script = ExtResource("3_d5qit")
 map_name = "Brinstar"
-unopened_img = ""
-opened_img = ""
+unopened_img = ExtResource("5_c5p8t")
+opened_img = ExtResource("3_0fhul")
 
 [sub_resource type="Resource" id="Resource_0yiat"]
 resource_local_to_scene = true
@@ -216,16 +218,16 @@ data = SubResource("Resource_8vpem")
 
 [node name="PeekKraid" parent="." index="20" instance=ExtResource("4_6i1tl")]
 position = Vector2(56, 160)
-map = "Kraid"
+to = "Kraid"
 
 [node name="PeekNorfair" parent="." index="21" instance=ExtResource("4_6i1tl")]
 position = Vector2(184, 112)
-map = "Norfair"
+to = "Norfair"
 
 [node name="PeekTourian" parent="." index="22" instance=ExtResource("4_6i1tl")]
 position = Vector2(16, 40)
-map = "Tourian"
+to = "Tourian"
 
 [node name="PeekCrateria" parent="." index="23" instance=ExtResource("4_6i1tl")]
 position = Vector2(24, 80)
-map = "Crateria"
+to = "Crateria"
