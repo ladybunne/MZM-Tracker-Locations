@@ -1,12 +1,14 @@
-[gd_scene load_steps=29 format=3 uid="uid://dq87ok8tonyx0"]
+[gd_scene load_steps=31 format=3 uid="uid://dq87ok8tonyx0"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_46tpm"]
 [ext_resource type="Texture2D" uid="uid://cgm00yftj7iq4" path="res://Assets/MapSprites/RidleyMap.png" id="2_3n0xj"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_gurvp"]
 [ext_resource type="PackedScene" uid="uid://lppkt3yjkrmv" path="res://Scenes/Location.tscn" id="4_uupy5"]
 [ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_210y0"]
+[ext_resource type="Texture2D" uid="uid://c5n1ocow210aj" path="res://Assets/ItemSprites/EnergyTank.png" id="6_6ilp7"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="6_notjh"]
-[ext_resource type="PackedScene" uid="uid://clrkyr3l8j3bp" path="res://Scenes/Maps/Norfair.tscn" id="7_3j5jc"]
+[ext_resource type="Texture2D" uid="uid://dx4dasd2jh318" path="res://Assets/ItemSprites/UnknownGravitySuit.png" id="7_nlwwu"]
+[ext_resource type="Texture2D" uid="uid://ds6rld2pdsmtc" path="res://Assets/ItemSprites/SuperMissileTank.png" id="8_ihw7c"]
 
 [sub_resource type="Resource" id="Resource_lpt12"]
 resource_local_to_scene = true
@@ -18,187 +20,194 @@ opened_img = ""
 [sub_resource type="Resource" id="Resource_l2qbx"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Southwest Puzzle Top"
 
 [sub_resource type="Resource" id="Resource_5lhbj"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Southwest Puzzle Bottom"
 
 [sub_resource type="Resource" id="Resource_3q58u"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "West Pillar"
 
 [sub_resource type="Resource" id="Resource_afm7e"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "E-Tank Behind Gravity"
 
 [sub_resource type="Resource" id="Resource_57wab"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Gravity Suit"
 
 [sub_resource type="Resource" id="Resource_nggr2"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Fake Floor E-Tank"
 
 [sub_resource type="Resource" id="Resource_kuscm"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Upper Ball Cannon Puzzle"
 
 [sub_resource type="Resource" id="Resource_2cfwn"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Lower Ball Cannon Puzzle"
 
 [sub_resource type="Resource" id="Resource_sjr70"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Imago Super Missile"
 
 [sub_resource type="Resource" id="Resource_sfluy"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "After Sidehopper Hall Upper"
 
 [sub_resource type="Resource" id="Resource_4wcef"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "After Sidehopper Hall Lower"
 
 [sub_resource type="Resource" id="Resource_s6j3b"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Long Hall"
 
 [sub_resource type="Resource" id="Resource_hvktk"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Center Pillar Missile"
 
 [sub_resource type="Resource" id="Resource_kgv7a"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Ball Room Missile"
 
 [sub_resource type="Resource" id="Resource_x6eaj"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Ball Room Super"
 
 [sub_resource type="Resource" id="Resource_fmlsy"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Fake Lava Missile"
 
 [sub_resource type="Resource" id="Resource_iyd3n"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Owl E-Tank"
 
 [sub_resource type="Resource" id="Resource_g8gx6"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Northeast Corner Missile"
 
 [sub_resource type="Resource" id="Resource_a4nib"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Bomb Puzzle"
 
 [sub_resource type="Resource" id="Resource_rqylw"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = ""
+location_name = "Speed Jump"
 
 [node name="Ridley" instance=ExtResource("1_46tpm")]
 texture = ExtResource("2_3n0xj")
 data = SubResource("Resource_lpt12")
 
-[node name="Location" parent="." index="0" instance=ExtResource("4_uupy5")]
+[node name="Southwest Puzzle Top" parent="." index="0" instance=ExtResource("4_uupy5")]
 position = Vector2(16, 80)
 data = SubResource("Resource_l2qbx")
 
-[node name="Location2" parent="." index="1" instance=ExtResource("4_uupy5")]
+[node name="Southwest Puzzle Bottom" parent="." index="1" instance=ExtResource("4_uupy5")]
 position = Vector2(16, 88)
 data = SubResource("Resource_5lhbj")
 
-[node name="Location3" parent="." index="2" instance=ExtResource("4_uupy5")]
+[node name="West Pillar" parent="." index="2" instance=ExtResource("4_uupy5")]
 position = Vector2(24, 64)
 data = SubResource("Resource_3q58u")
 
-[node name="Location4" parent="." index="3" instance=ExtResource("4_uupy5")]
+[node name="E-Tank Behind Gravity" parent="." index="3" instance=ExtResource("4_uupy5")]
 position = Vector2(32, 72)
+texture = ExtResource("6_6ilp7")
 data = SubResource("Resource_afm7e")
 
-[node name="Location5" parent="." index="4" instance=ExtResource("4_uupy5")]
+[node name="Gravity Suit" parent="." index="4" instance=ExtResource("4_uupy5")]
 position = Vector2(40, 72)
+texture = ExtResource("7_nlwwu")
 data = SubResource("Resource_57wab")
 
-[node name="Location6" parent="." index="5" instance=ExtResource("4_uupy5")]
+[node name="Fake Floor E-Tank" parent="." index="5" instance=ExtResource("4_uupy5")]
 position = Vector2(48, 40)
+texture = ExtResource("6_6ilp7")
 data = SubResource("Resource_nggr2")
 
-[node name="Location7" parent="." index="6" instance=ExtResource("4_uupy5")]
+[node name="Upper Ball Cannon Puzzle" parent="." index="6" instance=ExtResource("4_uupy5")]
 position = Vector2(56, 48)
 data = SubResource("Resource_kuscm")
 
-[node name="Location8" parent="." index="7" instance=ExtResource("4_uupy5")]
+[node name="Lower Ball Cannon Puzzle" parent="." index="7" instance=ExtResource("4_uupy5")]
 position = Vector2(56, 56)
 data = SubResource("Resource_2cfwn")
 
-[node name="Location9" parent="." index="8" instance=ExtResource("4_uupy5")]
+[node name="Imago Super Missile" parent="." index="8" instance=ExtResource("4_uupy5")]
 position = Vector2(64, 24)
+texture = ExtResource("8_ihw7c")
 data = SubResource("Resource_sjr70")
 
-[node name="Location10" parent="." index="9" instance=ExtResource("4_uupy5")]
+[node name="After Sidehopper Hall Upper" parent="." index="9" instance=ExtResource("4_uupy5")]
 position = Vector2(64, 48)
 data = SubResource("Resource_sfluy")
 
-[node name="Location11" parent="." index="10" instance=ExtResource("4_uupy5")]
+[node name="After Sidehopper Hall Lower" parent="." index="10" instance=ExtResource("4_uupy5")]
 position = Vector2(64, 56)
+texture = ExtResource("8_ihw7c")
 data = SubResource("Resource_4wcef")
 
-[node name="Location12" parent="." index="11" instance=ExtResource("4_uupy5")]
+[node name="Long Hall" parent="." index="11" instance=ExtResource("4_uupy5")]
 position = Vector2(72, 80)
 data = SubResource("Resource_s6j3b")
 
-[node name="Location13" parent="." index="12" instance=ExtResource("4_uupy5")]
+[node name="Center Pillar Missile" parent="." index="12" instance=ExtResource("4_uupy5")]
 position = Vector2(88, 56)
 data = SubResource("Resource_hvktk")
 
-[node name="Location14" parent="." index="13" instance=ExtResource("4_uupy5")]
+[node name="Ball Room Missile" parent="." index="13" instance=ExtResource("4_uupy5")]
 position = Vector2(96, 56)
 data = SubResource("Resource_kgv7a")
 
-[node name="Location15" parent="." index="14" instance=ExtResource("4_uupy5")]
+[node name="Ball Room Super" parent="." index="14" instance=ExtResource("4_uupy5")]
 position = Vector2(104, 48)
+texture = ExtResource("8_ihw7c")
 data = SubResource("Resource_x6eaj")
 
-[node name="Location16" parent="." index="15" instance=ExtResource("4_uupy5")]
+[node name="Fake Lava Missile" parent="." index="15" instance=ExtResource("4_uupy5")]
 position = Vector2(120, 64)
 data = SubResource("Resource_fmlsy")
 
-[node name="Location17" parent="." index="16" instance=ExtResource("4_uupy5")]
+[node name="Owl E-Tank" parent="." index="16" instance=ExtResource("4_uupy5")]
 position = Vector2(128, 72)
+texture = ExtResource("6_6ilp7")
 data = SubResource("Resource_iyd3n")
 
-[node name="Location18" parent="." index="17" instance=ExtResource("4_uupy5")]
+[node name="Northeast Corner Missile" parent="." index="17" instance=ExtResource("4_uupy5")]
 position = Vector2(144, 32)
 data = SubResource("Resource_g8gx6")
 
-[node name="Location19" parent="." index="18" instance=ExtResource("4_uupy5")]
+[node name="Bomb Puzzle" parent="." index="18" instance=ExtResource("4_uupy5")]
 position = Vector2(168, 72)
 data = SubResource("Resource_a4nib")
 
-[node name="Location20" parent="." index="19" instance=ExtResource("4_uupy5")]
+[node name="Speed Jump" parent="." index="19" instance=ExtResource("4_uupy5")]
 position = Vector2(184, 56)
 data = SubResource("Resource_rqylw")
 
 [node name="PeekNorfair" parent="." index="20" instance=ExtResource("6_notjh")]
 position = Vector2(112, 8)
-map = ExtResource("7_3j5jc")
+map = "Norfair"

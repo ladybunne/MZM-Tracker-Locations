@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://uuxs4u4glabr"]
+[gd_scene load_steps=24 format=3 uid="uid://uuxs4u4glabr"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_tvprs"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_bvs4j"]
@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://lppkt3yjkrmv" path="res://Scenes/Location.tscn" id="4_3tq45"]
 [ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_w7tn0"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="6_av42j"]
+[ext_resource type="Texture2D" uid="uid://b4qjc7qn5mpmq" path="res://Assets/ItemSprites/UnknownSpaceJump.png" id="6_yxr82"]
+[ext_resource type="Texture2D" uid="uid://cvsy82w33mrd5" path="res://Assets/ItemSprites/SpeedBooster.png" id="7_bunc3"]
+[ext_resource type="Texture2D" uid="uid://c5n1ocow210aj" path="res://Assets/ItemSprites/EnergyTank.png" id="8_mseaw"]
 
 [sub_resource type="Resource" id="Resource_jusrk"]
 resource_local_to_scene = true
@@ -17,126 +20,132 @@ opened_img = ""
 [sub_resource type="Resource" id="Resource_ewj3u"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Giant Hoppers Missile"
 
 [sub_resource type="Resource" id="Resource_d7og8"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Save Room Missile"
 
 [sub_resource type="Resource" id="Resource_akn77"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Crumble Block Missile"
 
 [sub_resource type="Resource" id="Resource_7odai"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Quad Ball Cannon Room"
 
 [sub_resource type="Resource" id="Resource_ntyvt"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Space Jump"
 
 [sub_resource type="Resource" id="Resource_cygk0"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Acid Ballspark"
 
 [sub_resource type="Resource" id="Resource_g4snp"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Speed Booster"
 
 [sub_resource type="Resource" id="Resource_we6ax"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Worm Missile"
 
 [sub_resource type="Resource" id="Resource_rp7bq"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Pillar Missile"
 
 [sub_resource type="Resource" id="Resource_ti7ak"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Acid Fall"
 
 [sub_resource type="Resource" id="Resource_c113i"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Worm E-Tank"
 
 [sub_resource type="Resource" id="Resource_8o3kq"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Speed Jump"
 
 [sub_resource type="Resource" id="Resource_0sj5u"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
-location_name = ""
+location_name = "Upper Right Morph Ball Cannon"
 
 [node name="Kraid" instance=ExtResource("1_tvprs")]
 texture = ExtResource("2_thkra")
 data = SubResource("Resource_jusrk")
 
-[node name="Location" parent="." index="0" instance=ExtResource("4_3tq45")]
+[node name="Giant Hoppers Missile" parent="." index="0" instance=ExtResource("4_3tq45")]
 position = Vector2(8, 40)
 data = SubResource("Resource_ewj3u")
 
-[node name="Location2" parent="." index="1" instance=ExtResource("4_3tq45")]
+[node name="Save Room Missile" parent="." index="1" instance=ExtResource("4_3tq45")]
 position = Vector2(32, 48)
 data = SubResource("Resource_d7og8")
 
-[node name="Location3" parent="." index="2" instance=ExtResource("4_3tq45")]
+[node name="Crumble Block Missile" parent="." index="2" instance=ExtResource("4_3tq45")]
 position = Vector2(40, 72)
 data = SubResource("Resource_akn77")
 
-[node name="Location4" parent="." index="3" instance=ExtResource("4_3tq45")]
+[node name="Quad Ball Cannon Room" parent="." index="3" instance=ExtResource("4_3tq45")]
 position = Vector2(40, 96)
 data = SubResource("Resource_7odai")
 
-[node name="Location5" parent="." index="4" instance=ExtResource("4_3tq45")]
+[node name="Space Jump" parent="." index="4" instance=ExtResource("4_3tq45")]
 position = Vector2(40, 112)
+texture = ExtResource("6_yxr82")
 data = SubResource("Resource_ntyvt")
 
-[node name="Location6" parent="." index="5" instance=ExtResource("4_3tq45")]
+[node name="Acid Ballspark" parent="." index="5" instance=ExtResource("4_3tq45")]
 position = Vector2(48, 64)
 data = SubResource("Resource_cygk0")
 
-[node name="Location7" parent="." index="6" instance=ExtResource("4_3tq45")]
+[node name="Speed Booster" parent="." index="6" instance=ExtResource("4_3tq45")]
 position = Vector2(48, 120)
+texture = ExtResource("7_bunc3")
 data = SubResource("Resource_g4snp")
 
-[node name="Location8" parent="." index="7" instance=ExtResource("4_3tq45")]
+[node name="Worm Missile" parent="." index="7" instance=ExtResource("4_3tq45")]
 position = Vector2(72, 32)
 data = SubResource("Resource_we6ax")
 
-[node name="Location9" parent="." index="8" instance=ExtResource("4_3tq45")]
+[node name="Pillar Missile" parent="." index="8" instance=ExtResource("4_3tq45")]
 position = Vector2(72, 48)
 data = SubResource("Resource_rp7bq")
 
-[node name="Location10" parent="." index="9" instance=ExtResource("4_3tq45")]
+[node name="Acid Fall" parent="." index="9" instance=ExtResource("4_3tq45")]
 position = Vector2(80, 80)
 data = SubResource("Resource_ti7ak")
 
-[node name="Location11" parent="." index="10" instance=ExtResource("4_3tq45")]
+[node name="Worm E-Tank" parent="." index="10" instance=ExtResource("4_3tq45")]
 position = Vector2(88, 16)
+texture = ExtResource("8_mseaw")
 data = SubResource("Resource_c113i")
 
-[node name="Location12" parent="." index="11" instance=ExtResource("4_3tq45")]
+[node name="Speed Jump" parent="." index="11" instance=ExtResource("4_3tq45")]
 position = Vector2(88, 56)
+texture = ExtResource("8_mseaw")
 data = SubResource("Resource_8o3kq")
 
-[node name="Location13" parent="." index="12" instance=ExtResource("4_3tq45")]
+[node name="Upper Right Morph Ball Cannon" parent="." index="12" instance=ExtResource("4_3tq45")]
 position = Vector2(104, 32)
 data = SubResource("Resource_0sj5u")
 
 [node name="PeekBrinstar" parent="." index="13" instance=ExtResource("6_av42j")]
 position = Vector2(56, 16)
+map = "Brinstar"
 
 [node name="PeekNorfair" parent="." index="14" instance=ExtResource("6_av42j")]
 position = Vector2(144, 72)
+map = "Norfair"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d3xrxxmlj4mj6"]
+[gd_scene load_steps=11 format=3 uid="uid://d3xrxxmlj4mj6"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_ld82v"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_tyvjl"]
@@ -7,8 +7,6 @@
 [ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_iixt6"]
 [ext_resource type="Texture2D" uid="uid://bqjgobrliw33a" path="res://Assets/ItemSprites/PowerBombTank.png" id="6_8bbv0"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="7_oj1u8"]
-[ext_resource type="PackedScene" uid="uid://colr1p5vww08d" path="res://Scenes/Maps/Brinstar.tscn" id="8_jnuxn"]
-[ext_resource type="PackedScene" uid="uid://cp3vo8s35rpif" path="res://Scenes/Maps/Crateria.tscn" id="9_qfnjh"]
 
 [sub_resource type="Resource" id="Resource_8balp"]
 resource_local_to_scene = true
@@ -42,8 +40,8 @@ data = SubResource("Resource_ehict")
 
 [node name="PeekBrinstar" parent="." index="2" instance=ExtResource("7_oj1u8")]
 position = Vector2(40, 16)
-map = ExtResource("8_jnuxn")
+map = "Brinstar"
 
 [node name="PeekCrateria" parent="." index="3" instance=ExtResource("7_oj1u8")]
 position = Vector2(16, 8)
-map = ExtResource("9_qfnjh")
+map = "Crateria"

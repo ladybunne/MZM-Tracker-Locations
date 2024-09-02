@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cp3vo8s35rpif"]
+[gd_scene load_steps=19 format=3 uid="uid://cp3vo8s35rpif"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_s55e3"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_a8bwu"]
@@ -10,10 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://crr8iiuc2vmlr" path="res://Assets/ItemSprites/PowerGrip.png" id="7_dhqo2"]
 [ext_resource type="Texture2D" uid="uid://jft5er1qv2xp" path="res://Assets/ItemSprites/UnknownPlasmaBeam.png" id="8_hx8j3"]
 [ext_resource type="Texture2D" uid="uid://ds6rld2pdsmtc" path="res://Assets/ItemSprites/SuperMissileTank.png" id="9_4ypbe"]
-[ext_resource type="PackedScene" uid="uid://colr1p5vww08d" path="res://Scenes/Maps/Brinstar.tscn" id="11_btw0e"]
-[ext_resource type="PackedScene" uid="uid://clrkyr3l8j3bp" path="res://Scenes/Maps/Norfair.tscn" id="12_ugqfx"]
-[ext_resource type="PackedScene" uid="uid://d3xrxxmlj4mj6" path="res://Scenes/Maps/Tourian.tscn" id="13_kor8b"]
-[ext_resource type="PackedScene" uid="uid://c2lfsupnovvw" path="res://Scenes/Maps/Chozodia.tscn" id="14_82q83"]
 
 [sub_resource type="Resource" id="Resource_2yuwq"]
 resource_local_to_scene = true
@@ -95,20 +91,20 @@ data = SubResource("Resource_08rmm")
 
 [node name="PeekBrinstar" parent="." index="7" instance=ExtResource("6_fjvjh")]
 position = Vector2(64, 104)
-map = ExtResource("11_btw0e")
+map = "Brinstar"
 
 [node name="PeekNorfair" parent="." index="8" instance=ExtResource("6_fjvjh")]
 position = Vector2(112, 80)
-map = ExtResource("12_ugqfx")
+map = "Norfair"
 
 [node name="PeekTourian" parent="." index="9" instance=ExtResource("6_fjvjh")]
 position = Vector2(16, 120)
-map = ExtResource("13_kor8b")
+map = "Tourian"
 
 [node name="PeekChozodia" parent="." index="10" instance=ExtResource("6_fjvjh")]
 position = Vector2(200, 32)
-map = ExtResource("14_82q83")
+map = "Chozodia"
 
 [node name="PeekChozodia2" parent="." index="11" instance=ExtResource("6_fjvjh")]
 position = Vector2(200, 64)
-map = ExtResource("14_82q83")
+map = "Chozodia"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://colr1p5vww08d"]
+[gd_scene load_steps=35 format=3 uid="uid://colr1p5vww08d"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_ldihg"]
 [ext_resource type="Texture2D" uid="uid://p1fdkbsxndw0" path="res://Assets/MapSprites/BrinstarMap.png" id="2_1sxm6"]
@@ -6,7 +6,6 @@
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="3_d5qit"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="4_6i1tl"]
 [ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_u1hm1"]
-[ext_resource type="PackedScene" uid="uid://uuxs4u4glabr" path="res://Scenes/Maps/Kraid.tscn" id="6_n6os3"]
 [ext_resource type="Texture2D" uid="uid://cxfkrqbbgs0m3" path="res://Assets/ItemSprites/MorphBall.png" id="7_xsd1h"]
 [ext_resource type="Texture2D" uid="uid://c5n1ocow210aj" path="res://Assets/ItemSprites/EnergyTank.png" id="9_72rs1"]
 [ext_resource type="Texture2D" uid="uid://bmfqojikroesw" path="res://Assets/ItemSprites/LongBeam.png" id="10_typ2e"]
@@ -14,9 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://dspst7rb36rw0" path="res://Assets/ItemSprites/VariaSuit.png" id="12_qjmlp"]
 [ext_resource type="Texture2D" uid="uid://deq4yrpoc2lcx" path="res://Assets/ItemSprites/ChargeBeam.png" id="12_utfhj"]
 [ext_resource type="Texture2D" uid="uid://54fn27l8xj1x" path="res://Assets/ItemSprites/Bomb.png" id="13_3c0u7"]
-[ext_resource type="PackedScene" uid="uid://clrkyr3l8j3bp" path="res://Scenes/Maps/Norfair.tscn" id="15_o6vc8"]
-[ext_resource type="PackedScene" uid="uid://d3xrxxmlj4mj6" path="res://Scenes/Maps/Tourian.tscn" id="16_y4sda"]
-[ext_resource type="PackedScene" uid="uid://cp3vo8s35rpif" path="res://Scenes/Maps/Crateria.tscn" id="17_xridc"]
 
 [sub_resource type="Resource" id="Resource_ne3uo"]
 resource_local_to_scene = true
@@ -220,16 +216,16 @@ data = SubResource("Resource_8vpem")
 
 [node name="PeekKraid" parent="." index="20" instance=ExtResource("4_6i1tl")]
 position = Vector2(56, 160)
-map = ExtResource("6_n6os3")
+map = "Kraid"
 
 [node name="PeekNorfair" parent="." index="21" instance=ExtResource("4_6i1tl")]
 position = Vector2(184, 112)
-map = ExtResource("15_o6vc8")
+map = "Norfair"
 
 [node name="PeekTourian" parent="." index="22" instance=ExtResource("4_6i1tl")]
 position = Vector2(16, 40)
-map = ExtResource("16_y4sda")
+map = "Tourian"
 
 [node name="PeekCrateria" parent="." index="23" instance=ExtResource("4_6i1tl")]
 position = Vector2(24, 80)
-map = ExtResource("17_xridc")
+map = "Crateria"
