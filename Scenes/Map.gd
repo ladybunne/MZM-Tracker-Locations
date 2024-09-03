@@ -34,7 +34,7 @@ func get_child_locations() -> Array[Dictionary]:
 	var children_json = [] as Array[Dictionary]
 	for child in get_children():
 		if child is Location:
-			children_json.append(child.build_child(data.map_name))
+			children_json.append(child.build_child(data.map_name, position.x, position.y))
 	return children_json
 
 func build() -> Dictionary:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://5jufrjma1ae"]
+[gd_scene load_steps=20 format=3 uid="uid://5jufrjma1ae"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_goddx"]
 [ext_resource type="PackedScene" uid="uid://colr1p5vww08d" path="res://Scenes/Maps/Brinstar.tscn" id="2_g5r1v"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://clrkyr3l8j3bp" path="res://Scenes/Maps/Norfair.tscn" id="7_8sy46"]
 [ext_resource type="PackedScene" uid="uid://dq87ok8tonyx0" path="res://Scenes/Maps/Ridley.tscn" id="8_iigcc"]
 [ext_resource type="PackedScene" uid="uid://d3xrxxmlj4mj6" path="res://Scenes/Maps/Tourian.tscn" id="9_im7il"]
+[ext_resource type="Texture2D" uid="uid://qqcn5d6f0a7n" path="res://Assets/MapSprites/CombinedMapNew.png" id="12_yfflw"]
 
 [sub_resource type="Resource" id="Resource_fm11j"]
 resource_local_to_scene = true
@@ -74,29 +75,35 @@ maps = {
 }
 
 [node name="Brinstar" parent="." instance=ExtResource("2_g5r1v")]
-position = Vector2(104, 232)
+position = Vector2(96, 88)
 data = SubResource("Resource_fm11j")
 
 [node name="Kraid" parent="." instance=ExtResource("6_bosu1")]
-position = Vector2(80, 400)
+position = Vector2(96, 232)
 data = SubResource("Resource_fxffk")
 
 [node name="Norfair" parent="." instance=ExtResource("7_8sy46")]
-position = Vector2(184, 352)
+position = Vector2(200, 184)
 data = SubResource("Resource_7qpsp")
 
 [node name="Ridley" parent="." instance=ExtResource("8_iigcc")]
-position = Vector2(200, 488)
+position = Vector2(216, 304)
 data = SubResource("Resource_jahxr")
 
 [node name="Tourian" parent="." instance=ExtResource("9_im7il")]
-position = Vector2(0, 208)
+position = Vector2(-8, 64)
 data = SubResource("Resource_1oqmy")
 
 [node name="Crateria" parent="." instance=ExtResource("5_bj0rq")]
-position = Vector2(64, 120)
+position = Vector2(56, -8)
 data = SubResource("Resource_fwgbe")
 
 [node name="Chozodia" parent="." instance=ExtResource("4_vvghj")]
-position = Vector2(288, 0)
+position = Vector2(344, -8)
 data = SubResource("Resource_cxp8x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("12_yfflw")
+centered = false

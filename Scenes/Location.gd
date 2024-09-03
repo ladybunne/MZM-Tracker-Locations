@@ -13,14 +13,18 @@ func get_map_location(p_map_name: String) -> Dictionary:
 	var map_location = MapLocation.new(p_map_name, position.x, position.y)
 	return map_location.build()
 
-func build_child(p_map_name: String) -> Dictionary:
+func get_map_location_combined_map(p_x: int, p_y: int) -> Dictionary:
+	var map_location = MapLocation.new("Combined", position.x + p_x, position.y + p_y)
+	return map_location.build()
+
+func build_child(p_map_name: String, p_x: int, p_y: int) -> Dictionary:
 	var output = {
 		"name": NAME_WITH_LOCATION.format({
 			"map_name": p_map_name,
 			"location_name": data.location_name
 		}),
 		"sections": [build_ref_section(p_map_name)],
-		"map_locations": [get_map_location(p_map_name)]
+		"map_locations": [get_map_location(p_map_name), get_map_location_combined_map(p_x, p_y)]
 	}
 	
 	return output
