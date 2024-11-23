@@ -25,15 +25,15 @@ resource_local_to_scene = true
 script = ExtResource("5_er1hj")
 location_name = "Landing Site Ballspark"
 
-[sub_resource type="Resource" id="Resource_s11kf"]
-resource_local_to_scene = true
-script = ExtResource("5_er1hj")
-location_name = "Power Grip"
-
 [sub_resource type="Resource" id="Resource_1p2mh"]
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
 location_name = "Moat"
+
+[sub_resource type="Resource" id="Resource_s11kf"]
+resource_local_to_scene = true
+script = ExtResource("5_er1hj")
+location_name = "Power Grip"
 
 [sub_resource type="Resource" id="Resource_x5i63"]
 resource_local_to_scene = true
@@ -43,7 +43,7 @@ location_name = "Statue Water"
 [sub_resource type="Resource" id="Resource_md1hf"]
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
-location_name = "Plasma Beam"
+location_name = "Unknown Item Statue"
 
 [sub_resource type="Resource" id="Resource_7rlfr"]
 resource_local_to_scene = true
@@ -64,20 +64,20 @@ position = Vector2(64, 32)
 texture = ExtResource("5_rdn1d")
 data = SubResource("Resource_40hab")
 
-[node name="Power Grip" parent="." index="1" instance=ExtResource("4_onid7")]
+[node name="Moat" parent="." index="1" instance=ExtResource("4_onid7")]
+position = Vector2(128, 64)
+data = SubResource("Resource_1p2mh")
+
+[node name="Power Grip" parent="." index="2" instance=ExtResource("4_onid7")]
 position = Vector2(104, 48)
 texture = ExtResource("7_dhqo2")
 data = SubResource("Resource_s11kf")
-
-[node name="Moat" parent="." index="2" instance=ExtResource("4_onid7")]
-position = Vector2(128, 64)
-data = SubResource("Resource_1p2mh")
 
 [node name="Statue Water" parent="." index="3" instance=ExtResource("4_onid7")]
 position = Vector2(144, 40)
 data = SubResource("Resource_x5i63")
 
-[node name="Plasma Beam" parent="." index="4" instance=ExtResource("4_onid7")]
+[node name="Unknown Item Statue" parent="." index="4" instance=ExtResource("4_onid7")]
 position = Vector2(152, 40)
 texture = ExtResource("8_hx8j3")
 data = SubResource("Resource_md1hf")

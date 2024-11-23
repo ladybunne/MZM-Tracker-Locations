@@ -46,37 +46,47 @@ location_name = "Long Beam"
 [sub_resource type="Resource" id="Resource_uetk3"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
-location_name = "Missile Above Super"
+location_name = "Main Shaft Left Alcove"
 
 [sub_resource type="Resource" id="Resource_w5eps"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
-location_name = "Super Missile"
+location_name = "Ballspark"
+
+[sub_resource type="Resource" id="Resource_lkss7"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Ripper Climb"
 
 [sub_resource type="Resource" id="Resource_t8m8m"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Speed Booster Shortcut Missile"
 
+[sub_resource type="Resource" id="Resource_2mcno"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Worm drop"
+
+[sub_resource type="Resource" id="Resource_8vpem"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Worm drop"
+
 [sub_resource type="Resource" id="Resource_sncws"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "First Missile"
-
-[sub_resource type="Resource" id="Resource_q7y0h"]
-resource_local_to_scene = true
-script = ExtResource("5_u1hm1")
-location_name = "Under Bridge"
 
 [sub_resource type="Resource" id="Resource_b1i37"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Behind Hive"
 
-[sub_resource type="Resource" id="Resource_lkss7"]
+[sub_resource type="Resource" id="Resource_q7y0h"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
-location_name = "Top Missile"
+location_name = "Under Bridge"
 
 [sub_resource type="Resource" id="Resource_jtlmc"]
 resource_local_to_scene = true
@@ -86,12 +96,17 @@ location_name = "Varia Suit"
 [sub_resource type="Resource" id="Resource_fnjsh"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
-location_name = "Acid Near Varia"
+location_name = "Acid near Varia"
 
 [sub_resource type="Resource" id="Resource_2nq7j"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
-location_name = "Upper Pillar Missile"
+location_name = "Upper Pillar"
+
+[sub_resource type="Resource" id="Resource_rp7ac"]
+resource_local_to_scene = true
+script = ExtResource("5_u1hm1")
+location_name = "Post-Hive In Wall"
 
 [sub_resource type="Resource" id="Resource_ok2gr"]
 resource_local_to_scene = true
@@ -103,25 +118,10 @@ resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Bomb"
 
-[sub_resource type="Resource" id="Resource_rp7ac"]
-resource_local_to_scene = true
-script = ExtResource("5_u1hm1")
-location_name = "Post-Hive Missile"
-
 [sub_resource type="Resource" id="Resource_b6l6q"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
-location_name = "Post-Hive E-Tank"
-
-[sub_resource type="Resource" id="Resource_2mcno"]
-resource_local_to_scene = true
-script = ExtResource("5_u1hm1")
-location_name = "Worm Drop"
-
-[sub_resource type="Resource" id="Resource_8vpem"]
-resource_local_to_scene = true
-script = ExtResource("5_u1hm1")
-location_name = "Worm Drop"
+location_name = "Post-Hive Pillar"
 
 [node name="Brinstar" instance=ExtResource("1_ldihg")]
 texture = ExtResource("2_1sxm6")
@@ -146,75 +146,75 @@ position = Vector2(56, 40)
 texture = ExtResource("10_typ2e")
 data = SubResource("Resource_y07h5")
 
-[node name="Missile Above Super" parent="." index="4" instance=ExtResource("3_5gl4p")]
+[node name="Main Shaft Left Alcove" parent="." index="4" instance=ExtResource("3_5gl4p")]
 position = Vector2(80, 80)
 data = SubResource("Resource_uetk3")
 
-[node name="Super Missile" parent="." index="5" instance=ExtResource("3_5gl4p")]
+[node name="Ballspark" parent="." index="5" instance=ExtResource("3_5gl4p")]
 position = Vector2(80, 88)
 texture = ExtResource("11_xv4p8")
 data = SubResource("Resource_w5eps")
 
-[node name="Speed Booster Shortcut Missile" parent="." index="6" instance=ExtResource("3_5gl4p")]
-position = Vector2(96, 88)
-data = SubResource("Resource_t8m8m")
-
-[node name="First Missile" parent="." index="7" instance=ExtResource("3_5gl4p")]
-position = Vector2(136, 88)
-data = SubResource("Resource_sncws")
-
-[node name="Under Bridge" parent="." index="8" instance=ExtResource("3_5gl4p")]
-position = Vector2(144, 72)
-data = SubResource("Resource_q7y0h")
-
-[node name="Behind Hive" parent="." index="9" instance=ExtResource("3_5gl4p")]
-position = Vector2(144, 48)
-data = SubResource("Resource_b1i37")
-
-[node name="Top Missile" parent="." index="10" instance=ExtResource("3_5gl4p")]
+[node name="Ripper Climb" parent="." index="6" instance=ExtResource("3_5gl4p")]
 position = Vector2(96, 16)
 data = SubResource("Resource_lkss7")
 
-[node name="Varia Suit" parent="." index="11" instance=ExtResource("3_5gl4p")]
-position = Vector2(120, 8)
-texture = ExtResource("12_qjmlp")
-data = SubResource("Resource_jtlmc")
+[node name="Speed Booster Shortcut Missile" parent="." index="7" instance=ExtResource("3_5gl4p")]
+position = Vector2(96, 88)
+data = SubResource("Resource_t8m8m")
 
-[node name="Acid Near Varia" parent="." index="12" instance=ExtResource("3_5gl4p")]
-position = Vector2(136, 16)
-data = SubResource("Resource_fnjsh")
-
-[node name="Upper Pillar Missile" parent="." index="13" instance=ExtResource("3_5gl4p")]
-position = Vector2(192, 24)
-data = SubResource("Resource_2nq7j")
-
-[node name="Behind Bombs" parent="." index="14" instance=ExtResource("3_5gl4p")]
-position = Vector2(192, 40)
-data = SubResource("Resource_ok2gr")
-
-[node name="Bomb" parent="." index="15" instance=ExtResource("3_5gl4p")]
-position = Vector2(200, 40)
-texture = ExtResource("13_3c0u7")
-data = SubResource("Resource_81fef")
-
-[node name="Post-Hive Missile" parent="." index="16" instance=ExtResource("3_5gl4p")]
-position = Vector2(184, 56)
-data = SubResource("Resource_rp7ac")
-
-[node name="Post-Hive E-Tank" parent="." index="17" instance=ExtResource("3_5gl4p")]
-position = Vector2(200, 56)
-texture = ExtResource("9_72rs1")
-data = SubResource("Resource_b6l6q")
-
-[node name="Worm Drop" parent="." index="18" instance=ExtResource("3_5gl4p")]
+[node name="Worm drop" parent="." index="8" instance=ExtResource("3_5gl4p")]
 position = Vector2(120, 88)
 texture = ExtResource("12_utfhj")
 data = SubResource("Resource_2mcno")
 
-[node name="Worm Drop2" parent="." index="19" instance=ExtResource("3_5gl4p")]
+[node name="Worm drop2" parent="." index="9" instance=ExtResource("3_5gl4p")]
 position = Vector2(192, 56)
 texture = ExtResource("12_utfhj")
 data = SubResource("Resource_8vpem")
+
+[node name="First Missile" parent="." index="10" instance=ExtResource("3_5gl4p")]
+position = Vector2(136, 88)
+data = SubResource("Resource_sncws")
+
+[node name="Behind Hive" parent="." index="11" instance=ExtResource("3_5gl4p")]
+position = Vector2(144, 48)
+data = SubResource("Resource_b1i37")
+
+[node name="Under Bridge" parent="." index="12" instance=ExtResource("3_5gl4p")]
+position = Vector2(144, 72)
+data = SubResource("Resource_q7y0h")
+
+[node name="Varia Suit" parent="." index="13" instance=ExtResource("3_5gl4p")]
+position = Vector2(120, 8)
+texture = ExtResource("12_qjmlp")
+data = SubResource("Resource_jtlmc")
+
+[node name="Acid near Varia" parent="." index="14" instance=ExtResource("3_5gl4p")]
+position = Vector2(136, 16)
+data = SubResource("Resource_fnjsh")
+
+[node name="Upper Pillar" parent="." index="15" instance=ExtResource("3_5gl4p")]
+position = Vector2(192, 24)
+data = SubResource("Resource_2nq7j")
+
+[node name="Post-Hive In Wall" parent="." index="16" instance=ExtResource("3_5gl4p")]
+position = Vector2(184, 56)
+data = SubResource("Resource_rp7ac")
+
+[node name="Behind Bombs" parent="." index="17" instance=ExtResource("3_5gl4p")]
+position = Vector2(192, 40)
+data = SubResource("Resource_ok2gr")
+
+[node name="Bomb" parent="." index="18" instance=ExtResource("3_5gl4p")]
+position = Vector2(200, 40)
+texture = ExtResource("13_3c0u7")
+data = SubResource("Resource_81fef")
+
+[node name="Post-Hive Pillar" parent="." index="19" instance=ExtResource("3_5gl4p")]
+position = Vector2(200, 56)
+texture = ExtResource("9_72rs1")
+data = SubResource("Resource_b6l6q")
 
 [node name="PeekKraid" parent="." index="20" instance=ExtResource("4_6i1tl")]
 position = Vector2(56, 160)

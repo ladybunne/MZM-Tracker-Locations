@@ -19,6 +19,26 @@ map_name = "Ridley"
 unopened_img = ExtResource("5_jkd2o")
 opened_img = ExtResource("3_su1uf")
 
+[sub_resource type="Resource" id="Resource_sjr70"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "Imago Super Missile"
+
+[sub_resource type="Resource" id="Resource_3q58u"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "West Pillar"
+
+[sub_resource type="Resource" id="Resource_nggr2"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "Fake Floor"
+
+[sub_resource type="Resource" id="Resource_s6j3b"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "Long Hall"
+
 [sub_resource type="Resource" id="Resource_l2qbx"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
@@ -29,85 +49,15 @@ resource_local_to_scene = true
 script = ExtResource("5_210y0")
 location_name = "Southwest Puzzle Bottom"
 
-[sub_resource type="Resource" id="Resource_3q58u"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "West Pillar"
-
-[sub_resource type="Resource" id="Resource_afm7e"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "E-Tank Behind Gravity"
-
-[sub_resource type="Resource" id="Resource_57wab"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "Gravity Suit"
-
-[sub_resource type="Resource" id="Resource_nggr2"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "Fake Floor E-Tank"
-
-[sub_resource type="Resource" id="Resource_kuscm"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "Upper Ball Cannon Puzzle"
-
-[sub_resource type="Resource" id="Resource_2cfwn"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "Lower Ball Cannon Puzzle"
-
-[sub_resource type="Resource" id="Resource_sjr70"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "Imago Super Missile"
-
-[sub_resource type="Resource" id="Resource_sfluy"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "After Sidehopper Hall Upper"
-
-[sub_resource type="Resource" id="Resource_4wcef"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "After Sidehopper Hall Lower"
-
-[sub_resource type="Resource" id="Resource_s6j3b"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "Long Hall"
-
-[sub_resource type="Resource" id="Resource_hvktk"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "Center Pillar Missile"
-
-[sub_resource type="Resource" id="Resource_kgv7a"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "Ball Room Missile"
-
-[sub_resource type="Resource" id="Resource_x6eaj"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "Ball Room Super"
-
 [sub_resource type="Resource" id="Resource_fmlsy"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = "Fake Lava Missile"
-
-[sub_resource type="Resource" id="Resource_iyd3n"]
-resource_local_to_scene = true
-script = ExtResource("5_210y0")
-location_name = "Owl E-Tank"
+location_name = "Fake Lava Under Floor"
 
 [sub_resource type="Resource" id="Resource_g8gx6"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = "Northeast Corner Missile"
+location_name = "Northeast Corner"
 
 [sub_resource type="Resource" id="Resource_a4nib"]
 resource_local_to_scene = true
@@ -119,96 +69,146 @@ resource_local_to_scene = true
 script = ExtResource("5_210y0")
 location_name = "Speed Jump"
 
+[sub_resource type="Resource" id="Resource_kuscm"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "Upper Ball Cannon Puzzle"
+
+[sub_resource type="Resource" id="Resource_2cfwn"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "Lower Ball Cannon Puzzle"
+
+[sub_resource type="Resource" id="Resource_sfluy"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "After Sidehopper Hall Upper"
+
+[sub_resource type="Resource" id="Resource_4wcef"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "After Sidehopper Hall Lower"
+
+[sub_resource type="Resource" id="Resource_hvktk"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "Center Pillar"
+
+[sub_resource type="Resource" id="Resource_kgv7a"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "Ball Room Lower"
+
+[sub_resource type="Resource" id="Resource_x6eaj"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "Ball Room Upper"
+
+[sub_resource type="Resource" id="Resource_iyd3n"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "Under Owls"
+
+[sub_resource type="Resource" id="Resource_afm7e"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "Behind Unknown Item Statue"
+
+[sub_resource type="Resource" id="Resource_57wab"]
+resource_local_to_scene = true
+script = ExtResource("5_210y0")
+location_name = "Unknown Item Statue"
+
 [node name="Ridley" instance=ExtResource("1_46tpm")]
 texture = ExtResource("2_3n0xj")
 data = SubResource("Resource_lpt12")
 
-[node name="Southwest Puzzle Top" parent="." index="0" instance=ExtResource("4_uupy5")]
-position = Vector2(16, 80)
-data = SubResource("Resource_l2qbx")
-
-[node name="Southwest Puzzle Bottom" parent="." index="1" instance=ExtResource("4_uupy5")]
-position = Vector2(16, 88)
-data = SubResource("Resource_5lhbj")
-
-[node name="West Pillar" parent="." index="2" instance=ExtResource("4_uupy5")]
-position = Vector2(24, 64)
-data = SubResource("Resource_3q58u")
-
-[node name="E-Tank Behind Gravity" parent="." index="3" instance=ExtResource("4_uupy5")]
-position = Vector2(32, 72)
-texture = ExtResource("6_6ilp7")
-data = SubResource("Resource_afm7e")
-
-[node name="Gravity Suit" parent="." index="4" instance=ExtResource("4_uupy5")]
-position = Vector2(40, 72)
-texture = ExtResource("7_nlwwu")
-data = SubResource("Resource_57wab")
-
-[node name="Fake Floor E-Tank" parent="." index="5" instance=ExtResource("4_uupy5")]
-position = Vector2(48, 40)
-texture = ExtResource("6_6ilp7")
-data = SubResource("Resource_nggr2")
-
-[node name="Upper Ball Cannon Puzzle" parent="." index="6" instance=ExtResource("4_uupy5")]
-position = Vector2(56, 48)
-data = SubResource("Resource_kuscm")
-
-[node name="Lower Ball Cannon Puzzle" parent="." index="7" instance=ExtResource("4_uupy5")]
-position = Vector2(56, 56)
-data = SubResource("Resource_2cfwn")
-
-[node name="Imago Super Missile" parent="." index="8" instance=ExtResource("4_uupy5")]
+[node name="Imago Super Missile" parent="." index="0" instance=ExtResource("4_uupy5")]
 position = Vector2(64, 24)
 texture = ExtResource("8_ihw7c")
 data = SubResource("Resource_sjr70")
 
-[node name="After Sidehopper Hall Upper" parent="." index="9" instance=ExtResource("4_uupy5")]
+[node name="West Pillar" parent="." index="1" instance=ExtResource("4_uupy5")]
+position = Vector2(24, 64)
+data = SubResource("Resource_3q58u")
+
+[node name="Fake Floor" parent="." index="2" instance=ExtResource("4_uupy5")]
+position = Vector2(48, 40)
+texture = ExtResource("6_6ilp7")
+data = SubResource("Resource_nggr2")
+
+[node name="Long Hall" parent="." index="3" instance=ExtResource("4_uupy5")]
+position = Vector2(72, 80)
+data = SubResource("Resource_s6j3b")
+
+[node name="Southwest Puzzle Top" parent="." index="4" instance=ExtResource("4_uupy5")]
+position = Vector2(16, 80)
+data = SubResource("Resource_l2qbx")
+
+[node name="Southwest Puzzle Bottom" parent="." index="5" instance=ExtResource("4_uupy5")]
+position = Vector2(16, 88)
+data = SubResource("Resource_5lhbj")
+
+[node name="Fake Lava Under Floor" parent="." index="6" instance=ExtResource("4_uupy5")]
+position = Vector2(120, 64)
+data = SubResource("Resource_fmlsy")
+
+[node name="Northeast Corner" parent="." index="7" instance=ExtResource("4_uupy5")]
+position = Vector2(144, 32)
+data = SubResource("Resource_g8gx6")
+
+[node name="Bomb Puzzle" parent="." index="8" instance=ExtResource("4_uupy5")]
+position = Vector2(168, 72)
+data = SubResource("Resource_a4nib")
+
+[node name="Speed Jump" parent="." index="9" instance=ExtResource("4_uupy5")]
+position = Vector2(184, 56)
+data = SubResource("Resource_rqylw")
+
+[node name="Upper Ball Cannon Puzzle" parent="." index="10" instance=ExtResource("4_uupy5")]
+position = Vector2(56, 48)
+data = SubResource("Resource_kuscm")
+
+[node name="Lower Ball Cannon Puzzle" parent="." index="11" instance=ExtResource("4_uupy5")]
+position = Vector2(56, 56)
+data = SubResource("Resource_2cfwn")
+
+[node name="After Sidehopper Hall Upper" parent="." index="12" instance=ExtResource("4_uupy5")]
 position = Vector2(64, 48)
 data = SubResource("Resource_sfluy")
 
-[node name="After Sidehopper Hall Lower" parent="." index="10" instance=ExtResource("4_uupy5")]
+[node name="After Sidehopper Hall Lower" parent="." index="13" instance=ExtResource("4_uupy5")]
 position = Vector2(64, 56)
 texture = ExtResource("8_ihw7c")
 data = SubResource("Resource_4wcef")
 
-[node name="Long Hall" parent="." index="11" instance=ExtResource("4_uupy5")]
-position = Vector2(72, 80)
-data = SubResource("Resource_s6j3b")
-
-[node name="Center Pillar Missile" parent="." index="12" instance=ExtResource("4_uupy5")]
+[node name="Center Pillar" parent="." index="14" instance=ExtResource("4_uupy5")]
 position = Vector2(88, 56)
 data = SubResource("Resource_hvktk")
 
-[node name="Ball Room Missile" parent="." index="13" instance=ExtResource("4_uupy5")]
+[node name="Ball Room Lower" parent="." index="15" instance=ExtResource("4_uupy5")]
 position = Vector2(96, 56)
 data = SubResource("Resource_kgv7a")
 
-[node name="Ball Room Super" parent="." index="14" instance=ExtResource("4_uupy5")]
+[node name="Ball Room Upper" parent="." index="16" instance=ExtResource("4_uupy5")]
 position = Vector2(104, 48)
 texture = ExtResource("8_ihw7c")
 data = SubResource("Resource_x6eaj")
 
-[node name="Fake Lava Missile" parent="." index="15" instance=ExtResource("4_uupy5")]
-position = Vector2(120, 64)
-data = SubResource("Resource_fmlsy")
-
-[node name="Owl E-Tank" parent="." index="16" instance=ExtResource("4_uupy5")]
+[node name="Under Owls" parent="." index="17" instance=ExtResource("4_uupy5")]
 position = Vector2(128, 72)
 texture = ExtResource("6_6ilp7")
 data = SubResource("Resource_iyd3n")
 
-[node name="Northeast Corner Missile" parent="." index="17" instance=ExtResource("4_uupy5")]
-position = Vector2(144, 32)
-data = SubResource("Resource_g8gx6")
+[node name="Behind Unknown Item Statue" parent="." index="18" instance=ExtResource("4_uupy5")]
+position = Vector2(32, 72)
+texture = ExtResource("6_6ilp7")
+data = SubResource("Resource_afm7e")
 
-[node name="Bomb Puzzle" parent="." index="18" instance=ExtResource("4_uupy5")]
-position = Vector2(168, 72)
-data = SubResource("Resource_a4nib")
-
-[node name="Speed Jump" parent="." index="19" instance=ExtResource("4_uupy5")]
-position = Vector2(184, 56)
-data = SubResource("Resource_rqylw")
+[node name="Unknown Item Statue" parent="." index="19" instance=ExtResource("4_uupy5")]
+position = Vector2(40, 72)
+texture = ExtResource("7_nlwwu")
+data = SubResource("Resource_57wab")
 
 [node name="PeekNorfair" parent="." index="20" instance=ExtResource("6_notjh")]
 position = Vector2(112, 8)

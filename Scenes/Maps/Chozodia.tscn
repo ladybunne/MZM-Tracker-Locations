@@ -24,20 +24,15 @@ resource_local_to_scene = true
 script = ExtResource("5_1cdgr")
 location_name = "Upper Crateria Door"
 
-[sub_resource type="Resource" id="Resource_tqhfx"]
-resource_local_to_scene = true
-script = ExtResource("5_1cdgr")
-location_name = "Bomb Maze"
-
-[sub_resource type="Resource" id="Resource_74xdi"]
-resource_local_to_scene = true
-script = ExtResource("5_1cdgr")
-location_name = "Zoomer Maze"
-
 [sub_resource type="Resource" id="Resource_37pru"]
 resource_local_to_scene = true
 script = ExtResource("5_1cdgr")
-location_name = "Ruins Near Upper Crateria Door"
+location_name = "Ruins East of Upper Crateria Door"
+
+[sub_resource type="Resource" id="Resource_f8ooj"]
+resource_local_to_scene = true
+script = ExtResource("5_1cdgr")
+location_name = "Triple Crawling Pirates"
 
 [sub_resource type="Resource" id="Resource_1r5o0"]
 resource_local_to_scene = true
@@ -49,20 +44,55 @@ resource_local_to_scene = true
 script = ExtResource("5_1cdgr")
 location_name = "Chozo Ghost Area Underwater"
 
-[sub_resource type="Resource" id="Resource_f8ooj"]
+[sub_resource type="Resource" id="Resource_gqw8b"]
 resource_local_to_scene = true
 script = ExtResource("5_1cdgr")
-location_name = "Under Chozo Ghost Area Water"
+location_name = "Lava Dive"
+
+[sub_resource type="Resource" id="Resource_bgkuk"]
+resource_local_to_scene = true
+script = ExtResource("5_1cdgr")
+location_name = "Chozo Ghost Area Long Shinespark"
+
+[sub_resource type="Resource" id="Resource_tqhfx"]
+resource_local_to_scene = true
+script = ExtResource("5_1cdgr")
+location_name = "Bomb Maze"
+
+[sub_resource type="Resource" id="Resource_74xdi"]
+resource_local_to_scene = true
+script = ExtResource("5_1cdgr")
+location_name = "Zoomer Maze"
 
 [sub_resource type="Resource" id="Resource_awevy"]
 resource_local_to_scene = true
 script = ExtResource("5_1cdgr")
-location_name = "Glass Tube E-Tank"
+location_name = "Left of Glass Tube"
 
-[sub_resource type="Resource" id="Resource_gqw8b"]
+[sub_resource type="Resource" id="Resource_mb7wx"]
 resource_local_to_scene = true
 script = ExtResource("5_1cdgr")
-location_name = "Lava Super"
+location_name = "Right of Glass Tube"
+
+[sub_resource type="Resource" id="Resource_eujsn"]
+resource_local_to_scene = true
+script = ExtResource("5_1cdgr")
+location_name = "Pirate Pitfall Trap"
+
+[sub_resource type="Resource" id="Resource_826ri"]
+resource_local_to_scene = true
+script = ExtResource("5_1cdgr")
+location_name = "Behind Workbot"
+
+[sub_resource type="Resource" id="Resource_sj3u0"]
+resource_local_to_scene = true
+script = ExtResource("5_1cdgr")
+location_name = "Ceiling Near Map Station"
+
+[sub_resource type="Resource" id="Resource_4ub7e"]
+resource_local_to_scene = true
+script = ExtResource("5_1cdgr")
+location_name = "Southeast Corner In Hull"
 
 [sub_resource type="Resource" id="Resource_cmddv"]
 resource_local_to_scene = true
@@ -72,42 +102,12 @@ location_name = "Original Power Bomb"
 [sub_resource type="Resource" id="Resource_v86cv"]
 resource_local_to_scene = true
 script = ExtResource("5_1cdgr")
-location_name = "Next To Original Power Bomb"
-
-[sub_resource type="Resource" id="Resource_mb7wx"]
-resource_local_to_scene = true
-script = ExtResource("5_1cdgr")
-location_name = "Glass Tube Power Bomb"
-
-[sub_resource type="Resource" id="Resource_bgkuk"]
-resource_local_to_scene = true
-script = ExtResource("5_1cdgr")
-location_name = "Chozo Ghost Area Long Shinespark"
-
-[sub_resource type="Resource" id="Resource_eujsn"]
-resource_local_to_scene = true
-script = ExtResource("5_1cdgr")
-location_name = "Shortcut Super"
-
-[sub_resource type="Resource" id="Resource_826ri"]
-resource_local_to_scene = true
-script = ExtResource("5_1cdgr")
-location_name = "Workbot Super"
-
-[sub_resource type="Resource" id="Resource_sj3u0"]
-resource_local_to_scene = true
-script = ExtResource("5_1cdgr")
-location_name = "Mothership Ceiling Near ZSS Start"
+location_name = "Next to Original Power Bomb"
 
 [sub_resource type="Resource" id="Resource_f75ap"]
 resource_local_to_scene = true
 script = ExtResource("5_1cdgr")
 location_name = "Under Mecha Ridley Hallway"
-
-[sub_resource type="Resource" id="Resource_4ub7e"]
-resource_local_to_scene = true
-script = ExtResource("5_1cdgr")
-location_name = "Southeast Corner In Hull"
 
 [node name="Chozodia" instance=ExtResource("1_lk3hk")]
 texture = ExtResource("2_y4w0f")
@@ -118,89 +118,89 @@ position = Vector2(32, 152)
 texture = ExtResource("5_m3j6e")
 data = SubResource("Resource_isobl")
 
-[node name="Bomb Maze" parent="." index="1" instance=ExtResource("4_lq8bi")]
-position = Vector2(32, 176)
-texture = ExtResource("7_bmelt")
-data = SubResource("Resource_tqhfx")
-
-[node name="Zoomer Maze" parent="." index="2" instance=ExtResource("4_lq8bi")]
-position = Vector2(48, 176)
-texture = ExtResource("7_bmelt")
-data = SubResource("Resource_74xdi")
-
-[node name="Ruins Near Upper Crateria Door" parent="." index="3" instance=ExtResource("4_lq8bi")]
+[node name="Ruins East of Upper Crateria Door" parent="." index="1" instance=ExtResource("4_lq8bi")]
 position = Vector2(56, 160)
 texture = ExtResource("7_bmelt")
 data = SubResource("Resource_37pru")
 
-[node name="Chozo Ghost Area Morph Tunnel Above Water" parent="." index="4" instance=ExtResource("4_lq8bi")]
-position = Vector2(80, 64)
-data = SubResource("Resource_1r5o0")
-
-[node name="Chozo Ghost Area Underwater" parent="." index="5" instance=ExtResource("4_lq8bi")]
-position = Vector2(80, 72)
-texture = ExtResource("7_bmelt")
-data = SubResource("Resource_0rpw6")
-
-[node name="Under Chozo Ghost Area Water" parent="." index="6" instance=ExtResource("4_lq8bi")]
+[node name="Triple Crawling Pirates" parent="." index="2" instance=ExtResource("4_lq8bi")]
 position = Vector2(80, 80)
 texture = ExtResource("5_m3j6e")
 data = SubResource("Resource_f8ooj")
 
-[node name="Glass Tube E-Tank" parent="." index="7" instance=ExtResource("4_lq8bi")]
-position = Vector2(80, 152)
-texture = ExtResource("8_kon32")
-data = SubResource("Resource_awevy")
+[node name="Chozo Ghost Area Morph Tunnel Above Water" parent="." index="3" instance=ExtResource("4_lq8bi")]
+position = Vector2(80, 64)
+data = SubResource("Resource_1r5o0")
 
-[node name="Lava Super" parent="." index="8" instance=ExtResource("4_lq8bi")]
+[node name="Chozo Ghost Area Underwater" parent="." index="4" instance=ExtResource("4_lq8bi")]
+position = Vector2(80, 72)
+texture = ExtResource("7_bmelt")
+data = SubResource("Resource_0rpw6")
+
+[node name="Lava Dive" parent="." index="5" instance=ExtResource("4_lq8bi")]
 position = Vector2(88, 112)
 texture = ExtResource("7_bmelt")
 data = SubResource("Resource_gqw8b")
 
-[node name="Original Power Bomb" parent="." index="9" instance=ExtResource("4_lq8bi")]
-position = Vector2(112, 48)
-texture = ExtResource("5_m3j6e")
-data = SubResource("Resource_cmddv")
-
-[node name="Next To Original Power Bomb" parent="." index="10" instance=ExtResource("4_lq8bi")]
-position = Vector2(120, 40)
-texture = ExtResource("5_m3j6e")
-data = SubResource("Resource_v86cv")
-
-[node name="Glass Tube Power Bomb" parent="." index="11" instance=ExtResource("4_lq8bi")]
-position = Vector2(120, 112)
-texture = ExtResource("5_m3j6e")
-data = SubResource("Resource_mb7wx")
-
-[node name="Chozo Ghost Area Long Shinespark" parent="." index="12" instance=ExtResource("4_lq8bi")]
+[node name="Chozo Ghost Area Long Shinespark" parent="." index="6" instance=ExtResource("4_lq8bi")]
 position = Vector2(136, 72)
 texture = ExtResource("8_kon32")
 data = SubResource("Resource_bgkuk")
 
-[node name="Shortcut Super" parent="." index="13" instance=ExtResource("4_lq8bi")]
+[node name="Bomb Maze" parent="." index="7" instance=ExtResource("4_lq8bi")]
+position = Vector2(32, 176)
+texture = ExtResource("7_bmelt")
+data = SubResource("Resource_tqhfx")
+
+[node name="Zoomer Maze" parent="." index="8" instance=ExtResource("4_lq8bi")]
+position = Vector2(48, 176)
+texture = ExtResource("7_bmelt")
+data = SubResource("Resource_74xdi")
+
+[node name="Left of Glass Tube" parent="." index="9" instance=ExtResource("4_lq8bi")]
+position = Vector2(80, 152)
+texture = ExtResource("8_kon32")
+data = SubResource("Resource_awevy")
+
+[node name="Right of Glass Tube" parent="." index="10" instance=ExtResource("4_lq8bi")]
+position = Vector2(120, 112)
+texture = ExtResource("5_m3j6e")
+data = SubResource("Resource_mb7wx")
+
+[node name="Pirate Pitfall Trap" parent="." index="11" instance=ExtResource("4_lq8bi")]
 position = Vector2(144, 64)
 texture = ExtResource("7_bmelt")
 data = SubResource("Resource_eujsn")
 
-[node name="Workbot Super" parent="." index="14" instance=ExtResource("4_lq8bi")]
+[node name="Behind Workbot" parent="." index="12" instance=ExtResource("4_lq8bi")]
 position = Vector2(160, 64)
 texture = ExtResource("7_bmelt")
 data = SubResource("Resource_826ri")
 
-[node name="Mothership Ceiling Near ZSS Start" parent="." index="15" instance=ExtResource("4_lq8bi")]
+[node name="Ceiling Near Map Station" parent="." index="13" instance=ExtResource("4_lq8bi")]
 position = Vector2(168, 128)
 texture = ExtResource("7_bmelt")
 data = SubResource("Resource_sj3u0")
 
-[node name="Under Mecha Ridley Hallway" parent="." index="16" instance=ExtResource("4_lq8bi")]
-position = Vector2(176, 24)
-texture = ExtResource("8_kon32")
-data = SubResource("Resource_f75ap")
-
-[node name="Southeast Corner In Hull" parent="." index="17" instance=ExtResource("4_lq8bi")]
+[node name="Southeast Corner In Hull" parent="." index="14" instance=ExtResource("4_lq8bi")]
 position = Vector2(208, 120)
 texture = ExtResource("5_m3j6e")
 data = SubResource("Resource_4ub7e")
+
+[node name="Original Power Bomb" parent="." index="15" instance=ExtResource("4_lq8bi")]
+position = Vector2(112, 48)
+texture = ExtResource("5_m3j6e")
+data = SubResource("Resource_cmddv")
+
+[node name="Next to Original Power Bomb" parent="." index="16" instance=ExtResource("4_lq8bi")]
+position = Vector2(120, 40)
+texture = ExtResource("5_m3j6e")
+data = SubResource("Resource_v86cv")
+
+[node name="Under Mecha Ridley Hallway" parent="." index="17" instance=ExtResource("4_lq8bi")]
+position = Vector2(176, 24)
+texture = ExtResource("8_kon32")
+data = SubResource("Resource_f75ap")
 
 [node name="PeekCrateria" parent="." index="18" instance=ExtResource("6_pi4vb")]
 position = Vector2(8, 144)

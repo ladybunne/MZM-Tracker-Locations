@@ -20,7 +20,7 @@ opened_img = ExtResource("3_yhqa0")
 [sub_resource type="Resource" id="Resource_6t0wf"]
 resource_local_to_scene = true
 script = ExtResource("5_iixt6")
-location_name = "Left Of Mother Brain"
+location_name = "Left of Mother Brain"
 
 [sub_resource type="Resource" id="Resource_ehict"]
 resource_local_to_scene = true
@@ -31,7 +31,7 @@ location_name = "Under Mother Brain"
 texture = ExtResource("2_xxns0")
 data = SubResource("Resource_8balp")
 
-[node name="Left Of Mother Brain" parent="." index="0" instance=ExtResource("4_ub1lm")]
+[node name="Left of Mother Brain" parent="." index="0" instance=ExtResource("4_ub1lm")]
 position = Vector2(8, 104)
 data = SubResource("Resource_6t0wf")
 
