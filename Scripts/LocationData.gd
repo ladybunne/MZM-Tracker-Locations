@@ -8,12 +8,10 @@ class_name LocationData extends Resource
 
 signal location_name_changed(p_location_name: String)
 
-const ACCESS_RULES_STRING = "^${map_name}{function_name}"
+const ACCESS_RULES_STRING = "^$CanReach|{map_name} {location_name}"
 
 func access_rules_string(p_map_name: String):
-	var regex_match = Globals.regex.search(location_name)
-	var function_name = "".join(regex_match.strings.slice(1))
 	return ACCESS_RULES_STRING.format({
 		"map_name": p_map_name,
-		"function_name": function_name
+		"location_name": location_name
 	})
