@@ -23,56 +23,6 @@ map_name = "Norfair"
 unopened_img = ExtResource("5_dgcl0")
 opened_img = ExtResource("3_uxbuv")
 
-[sub_resource type="Resource" id="Resource_um8si"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Hallway to Crateria"
-
-[sub_resource type="Resource" id="Resource_8wd13"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Under Crateria Elevator"
-
-[sub_resource type="Resource" id="Resource_lfe0g"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Big Room"
-
-[sub_resource type="Resource" id="Resource_56n42"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Ice Beam"
-
-[sub_resource type="Resource" id="Resource_ch8es"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Heated Room above Ice Beam"
-
-[sub_resource type="Resource" id="Resource_h3lca"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Behind Top Chozo Statue"
-
-[sub_resource type="Resource" id="Resource_l6foj"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Bomb Trap"
-
-[sub_resource type="Resource" id="Resource_eojjm"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Heated Room Under Brinstar Elevator"
-
-[sub_resource type="Resource" id="Resource_i23vs"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Hi-Jump"
-
-[sub_resource type="Resource" id="Resource_aaneg"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Right Shaft Near Hi-Jump"
-
 [sub_resource type="Resource" id="Resource_7p30u"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
@@ -82,21 +32,6 @@ location_name = "Lava Dive Left"
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Lava Dive Right"
-
-[sub_resource type="Resource" id="Resource_eymw4"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Wave Beam"
-
-[sub_resource type="Resource" id="Resource_2sv84"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Heated Room Below Wave - Left"
-
-[sub_resource type="Resource" id="Resource_7ea8f"]
-resource_local_to_scene = true
-script = ExtResource("5_gh606")
-location_name = "Heated Room Below Wave - Right"
 
 [sub_resource type="Resource" id="Resource_khqma"]
 resource_local_to_scene = true
@@ -108,6 +43,41 @@ resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Next to Screw Attack"
 
+[sub_resource type="Resource" id="Resource_um8si"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Hallway to Crateria"
+
+[sub_resource type="Resource" id="Resource_8wd13"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Under Crateria Elevator"
+
+[sub_resource type="Resource" id="Resource_eymw4"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Wave Beam"
+
+[sub_resource type="Resource" id="Resource_l6foj"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Bomb Trap"
+
+[sub_resource type="Resource" id="Resource_2sv84"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Heated Room Below Wave - Left"
+
+[sub_resource type="Resource" id="Resource_7ea8f"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Heated Room Below Wave - Right"
+
+[sub_resource type="Resource" id="Resource_eojjm"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Heated Room Under Brinstar Elevator"
+
 [sub_resource type="Resource" id="Resource_th5w4"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
@@ -118,10 +88,40 @@ resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Behind Lower Super Missile Door - Right"
 
+[sub_resource type="Resource" id="Resource_56n42"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Ice Beam"
+
+[sub_resource type="Resource" id="Resource_ch8es"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Heated Room above Ice Beam"
+
+[sub_resource type="Resource" id="Resource_i23vs"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Hi-Jump"
+
+[sub_resource type="Resource" id="Resource_lfe0g"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Big Room"
+
+[sub_resource type="Resource" id="Resource_h3lca"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Behind Top Chozo Statue"
+
 [sub_resource type="Resource" id="Resource_cyy30"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Larva Ceiling"
+
+[sub_resource type="Resource" id="Resource_aaneg"]
+resource_local_to_scene = true
+script = ExtResource("5_gh606")
+location_name = "Right Shaft Near Hi-Jump"
 
 [sub_resource type="Resource" id="Resource_tmauk"]
 resource_local_to_scene = true
@@ -132,93 +132,93 @@ location_name = "Right Shaft Bottom"
 texture = ExtResource("2_ss6af")
 data = SubResource("Resource_0sexs")
 
-[node name="Hallway to Crateria" parent="." index="0" instance=ExtResource("4_4i3ha")]
-position = Vector2(72, 40)
-data = SubResource("Resource_um8si")
-
-[node name="Under Crateria Elevator" parent="." index="1" instance=ExtResource("4_4i3ha")]
-position = Vector2(72, 48)
-data = SubResource("Resource_8wd13")
-
-[node name="Big Room" parent="." index="2" instance=ExtResource("4_4i3ha")]
-position = Vector2(152, 32)
-data = SubResource("Resource_lfe0g")
-
-[node name="Ice Beam" parent="." index="3" instance=ExtResource("4_4i3ha")]
-position = Vector2(136, 24)
-texture = ExtResource("10_qbivu")
-data = SubResource("Resource_56n42")
-
-[node name="Heated Room above Ice Beam" parent="." index="4" instance=ExtResource("4_4i3ha")]
-position = Vector2(144, 16)
-data = SubResource("Resource_ch8es")
-
-[node name="Behind Top Chozo Statue" parent="." index="5" instance=ExtResource("4_4i3ha")]
-position = Vector2(160, 8)
-data = SubResource("Resource_h3lca")
-
-[node name="Bomb Trap" parent="." index="6" instance=ExtResource("4_4i3ha")]
-position = Vector2(80, 48)
-texture = ExtResource("9_wm6q5")
-data = SubResource("Resource_l6foj")
-
-[node name="Heated Room Under Brinstar Elevator" parent="." index="7" instance=ExtResource("4_4i3ha")]
-position = Vector2(104, 48)
-data = SubResource("Resource_eojjm")
-
-[node name="Hi-Jump" parent="." index="8" instance=ExtResource("4_4i3ha")]
-position = Vector2(144, 64)
-texture = ExtResource("11_f1664")
-data = SubResource("Resource_i23vs")
-
-[node name="Right Shaft Near Hi-Jump" parent="." index="9" instance=ExtResource("4_4i3ha")]
-position = Vector2(168, 64)
-data = SubResource("Resource_aaneg")
-
-[node name="Lava Dive Left" parent="." index="10" instance=ExtResource("4_4i3ha")]
+[node name="Lava Dive Left" parent="." index="0" instance=ExtResource("4_4i3ha")]
 position = Vector2(16, 88)
 texture = ExtResource("5_c26ik")
 data = SubResource("Resource_7p30u")
 
-[node name="Lava Dive Right" parent="." index="11" instance=ExtResource("4_4i3ha")]
+[node name="Lava Dive Right" parent="." index="1" instance=ExtResource("4_4i3ha")]
 position = Vector2(24, 96)
 data = SubResource("Resource_f2fpx")
 
-[node name="Wave Beam" parent="." index="12" instance=ExtResource("4_4i3ha")]
-position = Vector2(72, 96)
-texture = ExtResource("8_1asii")
-data = SubResource("Resource_eymw4")
-
-[node name="Heated Room Below Wave - Left" parent="." index="13" instance=ExtResource("4_4i3ha")]
-position = Vector2(80, 104)
-data = SubResource("Resource_2sv84")
-
-[node name="Heated Room Below Wave - Right" parent="." index="14" instance=ExtResource("4_4i3ha")]
-position = Vector2(96, 104)
-data = SubResource("Resource_7ea8f")
-
-[node name="Screw Attack" parent="." index="15" instance=ExtResource("4_4i3ha")]
+[node name="Screw Attack" parent="." index="2" instance=ExtResource("4_4i3ha")]
 position = Vector2(40, 56)
 texture = ExtResource("7_38rd8")
 data = SubResource("Resource_khqma")
 
-[node name="Next to Screw Attack" parent="." index="16" instance=ExtResource("4_4i3ha")]
+[node name="Next to Screw Attack" parent="." index="3" instance=ExtResource("4_4i3ha")]
 position = Vector2(56, 56)
 data = SubResource("Resource_ou1ow")
 
-[node name="Behind Lower Super Missile Door - Left" parent="." index="17" instance=ExtResource("4_4i3ha")]
+[node name="Hallway to Crateria" parent="." index="4" instance=ExtResource("4_4i3ha")]
+position = Vector2(72, 40)
+data = SubResource("Resource_um8si")
+
+[node name="Under Crateria Elevator" parent="." index="5" instance=ExtResource("4_4i3ha")]
+position = Vector2(72, 48)
+data = SubResource("Resource_8wd13")
+
+[node name="Wave Beam" parent="." index="6" instance=ExtResource("4_4i3ha")]
+position = Vector2(72, 96)
+texture = ExtResource("8_1asii")
+data = SubResource("Resource_eymw4")
+
+[node name="Bomb Trap" parent="." index="7" instance=ExtResource("4_4i3ha")]
+position = Vector2(80, 48)
+texture = ExtResource("9_wm6q5")
+data = SubResource("Resource_l6foj")
+
+[node name="Heated Room Below Wave - Left" parent="." index="8" instance=ExtResource("4_4i3ha")]
+position = Vector2(80, 104)
+data = SubResource("Resource_2sv84")
+
+[node name="Heated Room Below Wave - Right" parent="." index="9" instance=ExtResource("4_4i3ha")]
+position = Vector2(96, 104)
+data = SubResource("Resource_7ea8f")
+
+[node name="Heated Room Under Brinstar Elevator" parent="." index="10" instance=ExtResource("4_4i3ha")]
+position = Vector2(104, 48)
+data = SubResource("Resource_eojjm")
+
+[node name="Behind Lower Super Missile Door - Left" parent="." index="11" instance=ExtResource("4_4i3ha")]
 position = Vector2(112, 80)
 data = SubResource("Resource_th5w4")
 
-[node name="Behind Lower Super Missile Door - Right" parent="." index="18" instance=ExtResource("4_4i3ha")]
+[node name="Behind Lower Super Missile Door - Right" parent="." index="12" instance=ExtResource("4_4i3ha")]
 position = Vector2(128, 80)
 texture = ExtResource("9_wm6q5")
 data = SubResource("Resource_hp32l")
 
-[node name="Larva Ceiling" parent="." index="19" instance=ExtResource("4_4i3ha")]
+[node name="Ice Beam" parent="." index="13" instance=ExtResource("4_4i3ha")]
+position = Vector2(136, 24)
+texture = ExtResource("10_qbivu")
+data = SubResource("Resource_56n42")
+
+[node name="Heated Room above Ice Beam" parent="." index="14" instance=ExtResource("4_4i3ha")]
+position = Vector2(144, 16)
+data = SubResource("Resource_ch8es")
+
+[node name="Hi-Jump" parent="." index="15" instance=ExtResource("4_4i3ha")]
+position = Vector2(144, 64)
+texture = ExtResource("11_f1664")
+data = SubResource("Resource_i23vs")
+
+[node name="Big Room" parent="." index="16" instance=ExtResource("4_4i3ha")]
+position = Vector2(152, 32)
+data = SubResource("Resource_lfe0g")
+
+[node name="Behind Top Chozo Statue" parent="." index="17" instance=ExtResource("4_4i3ha")]
+position = Vector2(160, 8)
+data = SubResource("Resource_h3lca")
+
+[node name="Larva Ceiling" parent="." index="18" instance=ExtResource("4_4i3ha")]
 position = Vector2(160, 88)
 texture = ExtResource("12_iujvo")
 data = SubResource("Resource_cyy30")
+
+[node name="Right Shaft Near Hi-Jump" parent="." index="19" instance=ExtResource("4_4i3ha")]
+position = Vector2(168, 64)
+data = SubResource("Resource_aaneg")
 
 [node name="Right Shaft Bottom" parent="." index="20" instance=ExtResource("4_4i3ha")]
 position = Vector2(168, 88)

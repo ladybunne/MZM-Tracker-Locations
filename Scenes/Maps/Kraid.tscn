@@ -19,6 +19,11 @@ map_name = "Kraid"
 unopened_img = ExtResource("5_286hx")
 opened_img = ExtResource("3_v7tgj")
 
+[sub_resource type="Resource" id="Resource_ewj3u"]
+resource_local_to_scene = true
+script = ExtResource("5_w7tn0")
+location_name = "Behind Giant Hoppers"
+
 [sub_resource type="Resource" id="Resource_d7og8"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
@@ -28,41 +33,6 @@ location_name = "Save Room Tunnel"
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Zipline Morph Jump"
-
-[sub_resource type="Resource" id="Resource_cygk0"]
-resource_local_to_scene = true
-script = ExtResource("5_w7tn0")
-location_name = "Acid Ballspark"
-
-[sub_resource type="Resource" id="Resource_rp7bq"]
-resource_local_to_scene = true
-script = ExtResource("5_w7tn0")
-location_name = "Right Hall Pillar"
-
-[sub_resource type="Resource" id="Resource_8o3kq"]
-resource_local_to_scene = true
-script = ExtResource("5_w7tn0")
-location_name = "Speed Jump"
-
-[sub_resource type="Resource" id="Resource_0sj5u"]
-resource_local_to_scene = true
-script = ExtResource("5_w7tn0")
-location_name = "Upper Right Morph Ball Cannon"
-
-[sub_resource type="Resource" id="Resource_we6ax"]
-resource_local_to_scene = true
-script = ExtResource("5_w7tn0")
-location_name = "Under Acid Worm"
-
-[sub_resource type="Resource" id="Resource_c113i"]
-resource_local_to_scene = true
-script = ExtResource("5_w7tn0")
-location_name = "Zipline Activator Room"
-
-[sub_resource type="Resource" id="Resource_ewj3u"]
-resource_local_to_scene = true
-script = ExtResource("5_w7tn0")
-location_name = "Behind Giant Hoppers"
 
 [sub_resource type="Resource" id="Resource_7odai"]
 resource_local_to_scene = true
@@ -74,75 +44,105 @@ resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Unknown Item Statue"
 
+[sub_resource type="Resource" id="Resource_cygk0"]
+resource_local_to_scene = true
+script = ExtResource("5_w7tn0")
+location_name = "Acid Ballspark"
+
 [sub_resource type="Resource" id="Resource_g4snp"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Speed Booster"
+
+[sub_resource type="Resource" id="Resource_we6ax"]
+resource_local_to_scene = true
+script = ExtResource("5_w7tn0")
+location_name = "Under Acid Worm"
+
+[sub_resource type="Resource" id="Resource_rp7bq"]
+resource_local_to_scene = true
+script = ExtResource("5_w7tn0")
+location_name = "Right Hall Pillar"
 
 [sub_resource type="Resource" id="Resource_ti7ak"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Acid Fall"
 
+[sub_resource type="Resource" id="Resource_c113i"]
+resource_local_to_scene = true
+script = ExtResource("5_w7tn0")
+location_name = "Zipline Activator Room"
+
+[sub_resource type="Resource" id="Resource_8o3kq"]
+resource_local_to_scene = true
+script = ExtResource("5_w7tn0")
+location_name = "Speed Jump"
+
+[sub_resource type="Resource" id="Resource_0sj5u"]
+resource_local_to_scene = true
+script = ExtResource("5_w7tn0")
+location_name = "Upper Right Morph Ball Cannon"
+
 [node name="Kraid" instance=ExtResource("1_tvprs")]
 texture = ExtResource("2_thkra")
 data = SubResource("Resource_jusrk")
 
-[node name="Save Room Tunnel" parent="." index="0" instance=ExtResource("4_3tq45")]
-position = Vector2(32, 48)
-data = SubResource("Resource_d7og8")
-
-[node name="Zipline Morph Jump" parent="." index="1" instance=ExtResource("4_3tq45")]
-position = Vector2(40, 72)
-data = SubResource("Resource_akn77")
-
-[node name="Acid Ballspark" parent="." index="2" instance=ExtResource("4_3tq45")]
-position = Vector2(48, 64)
-data = SubResource("Resource_cygk0")
-
-[node name="Right Hall Pillar" parent="." index="3" instance=ExtResource("4_3tq45")]
-position = Vector2(72, 48)
-data = SubResource("Resource_rp7bq")
-
-[node name="Speed Jump" parent="." index="4" instance=ExtResource("4_3tq45")]
-position = Vector2(88, 56)
-texture = ExtResource("8_mseaw")
-data = SubResource("Resource_8o3kq")
-
-[node name="Upper Right Morph Ball Cannon" parent="." index="5" instance=ExtResource("4_3tq45")]
-position = Vector2(104, 32)
-data = SubResource("Resource_0sj5u")
-
-[node name="Under Acid Worm" parent="." index="6" instance=ExtResource("4_3tq45")]
-position = Vector2(72, 32)
-data = SubResource("Resource_we6ax")
-
-[node name="Zipline Activator Room" parent="." index="7" instance=ExtResource("4_3tq45")]
-position = Vector2(88, 16)
-texture = ExtResource("8_mseaw")
-data = SubResource("Resource_c113i")
-
-[node name="Behind Giant Hoppers" parent="." index="8" instance=ExtResource("4_3tq45")]
+[node name="Behind Giant Hoppers" parent="." index="0" instance=ExtResource("4_3tq45")]
 position = Vector2(8, 40)
 data = SubResource("Resource_ewj3u")
 
-[node name="Quad Ball Cannon Room" parent="." index="9" instance=ExtResource("4_3tq45")]
+[node name="Save Room Tunnel" parent="." index="1" instance=ExtResource("4_3tq45")]
+position = Vector2(32, 48)
+data = SubResource("Resource_d7og8")
+
+[node name="Zipline Morph Jump" parent="." index="2" instance=ExtResource("4_3tq45")]
+position = Vector2(40, 72)
+data = SubResource("Resource_akn77")
+
+[node name="Quad Ball Cannon Room" parent="." index="3" instance=ExtResource("4_3tq45")]
 position = Vector2(40, 96)
 data = SubResource("Resource_7odai")
 
-[node name="Unknown Item Statue" parent="." index="10" instance=ExtResource("4_3tq45")]
+[node name="Unknown Item Statue" parent="." index="4" instance=ExtResource("4_3tq45")]
 position = Vector2(40, 112)
 texture = ExtResource("6_yxr82")
 data = SubResource("Resource_ntyvt")
 
-[node name="Speed Booster" parent="." index="11" instance=ExtResource("4_3tq45")]
+[node name="Acid Ballspark" parent="." index="5" instance=ExtResource("4_3tq45")]
+position = Vector2(48, 64)
+data = SubResource("Resource_cygk0")
+
+[node name="Speed Booster" parent="." index="6" instance=ExtResource("4_3tq45")]
 position = Vector2(48, 120)
 texture = ExtResource("7_bunc3")
 data = SubResource("Resource_g4snp")
 
-[node name="Acid Fall" parent="." index="12" instance=ExtResource("4_3tq45")]
+[node name="Under Acid Worm" parent="." index="7" instance=ExtResource("4_3tq45")]
+position = Vector2(72, 32)
+data = SubResource("Resource_we6ax")
+
+[node name="Right Hall Pillar" parent="." index="8" instance=ExtResource("4_3tq45")]
+position = Vector2(72, 48)
+data = SubResource("Resource_rp7bq")
+
+[node name="Acid Fall" parent="." index="9" instance=ExtResource("4_3tq45")]
 position = Vector2(80, 80)
 data = SubResource("Resource_ti7ak")
+
+[node name="Zipline Activator Room" parent="." index="10" instance=ExtResource("4_3tq45")]
+position = Vector2(88, 16)
+texture = ExtResource("8_mseaw")
+data = SubResource("Resource_c113i")
+
+[node name="Speed Jump" parent="." index="11" instance=ExtResource("4_3tq45")]
+position = Vector2(88, 56)
+texture = ExtResource("8_mseaw")
+data = SubResource("Resource_8o3kq")
+
+[node name="Upper Right Morph Ball Cannon" parent="." index="12" instance=ExtResource("4_3tq45")]
+position = Vector2(104, 32)
+data = SubResource("Resource_0sj5u")
 
 [node name="PeekBrinstar" parent="." index="13" instance=ExtResource("6_av42j")]
 position = Vector2(56, 16)
