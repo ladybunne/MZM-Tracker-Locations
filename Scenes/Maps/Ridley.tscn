@@ -37,7 +37,7 @@ location_name = "West Pillar"
 [sub_resource type="Resource" id="Resource_afm7e"]
 resource_local_to_scene = true
 script = ExtResource("5_210y0")
-location_name = "Behind Unknown Item Statue"
+location_name = "Behind Unknown Statue"
 
 [sub_resource type="Resource" id="Resource_57wab"]
 resource_local_to_scene = true
@@ -135,7 +135,7 @@ data = SubResource("Resource_5lhbj")
 position = Vector2(24, 64)
 data = SubResource("Resource_3q58u")
 
-[node name="Behind Unknown Item Statue" parent="." index="3" instance=ExtResource("4_uupy5")]
+[node name="Behind Unknown Statue" parent="." index="3" instance=ExtResource("4_uupy5")]
 position = Vector2(32, 72)
 texture = ExtResource("6_6ilp7")
 data = SubResource("Resource_afm7e")
