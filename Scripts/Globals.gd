@@ -1,3 +1,4 @@
+# Globals is an autoload containing common functions and constants.
 extends Node
 
 const MAP_LOCATIONS_OFFSET_X = 4

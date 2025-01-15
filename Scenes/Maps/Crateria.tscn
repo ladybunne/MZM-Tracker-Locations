@@ -24,36 +24,71 @@ opened_img = ExtResource("3_wy536")
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
 location_name = "Landing Site Ballspark"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_s11kf"]
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
 location_name = "Power Grip"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_1p2mh"]
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
 location_name = "Moat"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_x5i63"]
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
 location_name = "Statue Water"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_md1hf"]
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
 location_name = "Unknown Item Statue"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_7rlfr"]
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
 location_name = "East Ballspark"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_08rmm"]
 resource_local_to_scene = true
 script = ExtResource("5_er1hj")
 location_name = "Northeast Corner"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [node name="Crateria" instance=ExtResource("1_s55e3")]
 texture = ExtResource("2_dajr5")
@@ -66,6 +101,7 @@ data = SubResource("Resource_40hab")
 
 [node name="Power Grip" parent="." index="1" instance=ExtResource("4_onid7")]
 position = Vector2(104, 48)
+scale = Vector2(0.470588, 0.5)
 texture = ExtResource("7_dhqo2")
 data = SubResource("Resource_s11kf")
 

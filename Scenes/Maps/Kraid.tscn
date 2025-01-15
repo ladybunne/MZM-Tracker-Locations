@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://uuxs4u4glabr"]
+[gd_scene load_steps=28 format=3 uid="uid://uuxs4u4glabr"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_tvprs"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_bvs4j"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://b4qjc7qn5mpmq" path="res://Assets/ItemSprites/UnknownSpaceJump.png" id="6_yxr82"]
 [ext_resource type="Texture2D" uid="uid://cvsy82w33mrd5" path="res://Assets/ItemSprites/SpeedBooster.png" id="7_bunc3"]
 [ext_resource type="Texture2D" uid="uid://c5n1ocow210aj" path="res://Assets/ItemSprites/EnergyTank.png" id="8_mseaw"]
+[ext_resource type="Texture2D" uid="uid://dfpodvfgiqfs8" path="res://Assets/BossSprites/Kraid.png" id="11_6qafd"]
 
 [sub_resource type="Resource" id="Resource_jusrk"]
 resource_local_to_scene = true
@@ -23,66 +24,141 @@ opened_img = ExtResource("3_v7tgj")
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Behind Giant Hoppers"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_d7og8"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Save Room Tunnel"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_akn77"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Zipline Morph Jump"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_7odai"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Quad Ball Cannon Room"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_ntyvt"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Unknown Item Statue"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_cygk0"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Acid Ballspark"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_g4snp"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Speed Booster"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_we6ax"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Under Acid Worm"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_rp7bq"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Right Hall Pillar"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_ti7ak"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Acid Fall"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_c113i"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Zipline Activator Room"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_8o3kq"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Speed Jump"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_0sj5u"]
 resource_local_to_scene = true
 script = ExtResource("5_w7tn0")
 location_name = "Upper Right Morph Ball Cannon"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
+
+[sub_resource type="Resource" id="Resource_qvone"]
+resource_local_to_scene = true
+script = ExtResource("5_w7tn0")
+location_name = "Kraid"
+prepend_map_name = false
+display_name = ""
+hosted_item = "kraid"
+location_size = 10
+location_border_thickness = 2
 
 [node name="Kraid" instance=ExtResource("1_tvprs")]
 texture = ExtResource("2_thkra")
@@ -106,6 +182,7 @@ data = SubResource("Resource_7odai")
 
 [node name="Unknown Item Statue" parent="." index="4" instance=ExtResource("4_3tq45")]
 position = Vector2(40, 112)
+scale = Vector2(0.5, 0.470588)
 texture = ExtResource("6_yxr82")
 data = SubResource("Resource_ntyvt")
 
@@ -132,11 +209,13 @@ data = SubResource("Resource_ti7ak")
 
 [node name="Zipline Activator Room" parent="." index="10" instance=ExtResource("4_3tq45")]
 position = Vector2(88, 16)
+scale = Vector2(0.5, 0.533333)
 texture = ExtResource("8_mseaw")
 data = SubResource("Resource_c113i")
 
 [node name="Speed Jump" parent="." index="11" instance=ExtResource("4_3tq45")]
 position = Vector2(88, 56)
+scale = Vector2(0.5, 0.533333)
 texture = ExtResource("8_mseaw")
 data = SubResource("Resource_8o3kq")
 
@@ -144,10 +223,17 @@ data = SubResource("Resource_8o3kq")
 position = Vector2(104, 32)
 data = SubResource("Resource_0sj5u")
 
-[node name="PeekBrinstar" parent="." index="13" instance=ExtResource("6_av42j")]
+[node name="Kraid" parent="." index="13" instance=ExtResource("4_3tq45")]
+position = Vector2(60, 116)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("11_6qafd")
+region_rect = Rect2(32, 24, 16, 16)
+data = SubResource("Resource_qvone")
+
+[node name="PeekBrinstar" parent="." index="14" instance=ExtResource("6_av42j")]
 position = Vector2(56, 16)
 to = "Brinstar"
 
-[node name="PeekNorfair" parent="." index="14" instance=ExtResource("6_av42j")]
+[node name="PeekNorfair" parent="." index="15" instance=ExtResource("6_av42j")]
 position = Vector2(144, 72)
 to = "Norfair"

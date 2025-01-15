@@ -10,8 +10,8 @@ colors = PackedColorArray(0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_5jf5r"]
 gradient = SubResource("Gradient_r6bmw")
-width = 16
-height = 16
+width = 32
+height = 32
 
 [node name="Location" type="Sprite2D"]
 z_index = 1
@@ -19,10 +19,13 @@ texture_filter = 1
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_bul4g")
 centered = false
+region_rect = Rect2(0, 0, 16, 16)
 script = ExtResource("1_mrgfl")
 data = ExtResource("3_05agv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_as_relative = false
+scale = Vector2(0.5, 0.5)
 texture = SubResource("GradientTexture2D_5jf5r")
 centered = false
+region_rect = Rect2(0, 0, 16, 16)

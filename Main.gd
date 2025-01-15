@@ -1,3 +1,4 @@
+# Main is the main entrypoint for the program.
 extends Node2D
 
 @export var maps: Dictionary

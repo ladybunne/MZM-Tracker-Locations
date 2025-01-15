@@ -27,101 +27,201 @@ opened_img = ExtResource("3_0fhul")
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Morph Ball"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_ywy62"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Morph Ball Cannon"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_y07h5"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Long Beam"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_toxxt"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Ceiling E-Tank"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_uetk3"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Main Shaft Left Alcove"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_w5eps"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Ballspark"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_lkss7"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Ripper Climb"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_t8m8m"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Speed Booster Shortcut"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_jtlmc"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Varia Suit"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_2mcno"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Worm drop"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_8vpem"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Worm drop"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_fnjsh"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Acid near Varia"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_sncws"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "First Missile"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_b1i37"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Behind Hive"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_q7y0h"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Under Bridge"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_rp7ac"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Post-Hive In Wall"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_2nq7j"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Upper Pillar"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_ok2gr"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Behind Bombs"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_81fef"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Bomb"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_b6l6q"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
 location_name = "Post-Hive Pillar"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [node name="Brinstar" instance=ExtResource("1_ldihg")]
 texture = ExtResource("2_1sxm6")
@@ -143,6 +243,7 @@ data = SubResource("Resource_y07h5")
 
 [node name="Ceiling E-Tank" parent="." index="3" instance=ExtResource("3_5gl4p")]
 position = Vector2(64, 112)
+scale = Vector2(0.5, 0.533333)
 texture = ExtResource("9_72rs1")
 data = SubResource("Resource_toxxt")
 
@@ -213,6 +314,7 @@ data = SubResource("Resource_81fef")
 
 [node name="Post-Hive Pillar" parent="." index="19" instance=ExtResource("3_5gl4p")]
 position = Vector2(200, 56)
+scale = Vector2(0.5, 0.533333)
 texture = ExtResource("9_72rs1")
 data = SubResource("Resource_b6l6q")
 

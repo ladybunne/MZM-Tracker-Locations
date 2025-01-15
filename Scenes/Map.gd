@@ -1,3 +1,4 @@
+# Map is a node that represents a whole PopTracker map.
 @tool
 class_name Map extends Sprite2D
 
@@ -15,7 +16,12 @@ func get_area_child() -> Dictionary:
 	for child in get_children():
 		if child is Location:
 			var unopened_img = Globals.get_image_name(child.texture)
-			sections.append(child.build_base_section(data.map_name, unopened_img if unopened_img != "MissileTank.png" else ""))
+			var built_child = child.build_base_section(data.map_name, unopened_img if unopened_img != "MissileTank.png" else "")
+			
+			# Don't add locations if they already exist in the list.
+			var existing = sections.filter(func(p: Dictionary): return p["name"] == built_child["name"])
+			if not existing:
+				sections.append(built_child)
 	return {
 		"name": data.map_name,
 		"sections": sections,
@@ -34,7 +40,14 @@ func get_child_locations() -> Array[Dictionary]:
 	var children_json = [] as Array[Dictionary]
 	for child in get_children():
 		if child is Location:
-			children_json.append(child.build_child(data.map_name, position.x, position.y))
+			var built_child = child.build_child(data.map_name, position.x, position.y)
+			
+			# Merge multiple copies of the same location into one section with multiple map locations.
+			var existing = children_json.filter(func(p: Dictionary): return p["name"] == built_child["name"])
+			if existing:
+				existing.front()["map_locations"].append_array(built_child["map_locations"])
+			else:
+				children_json.append(built_child)
 	return children_json
 
 func build() -> Dictionary:

@@ -27,106 +27,211 @@ opened_img = ExtResource("3_uxbuv")
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Lava Dive Left"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_f2fpx"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Lava Dive Right"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_khqma"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Screw Attack"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_ou1ow"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Next to Screw Attack"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_um8si"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Hallway to Crateria"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_8wd13"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Under Crateria Elevator"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_eymw4"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Wave Beam"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_l6foj"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Bomb Trap"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_2sv84"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Heated Room Below Wave - Left"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_7ea8f"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Heated Room Below Wave - Right"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_eojjm"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Heated Room Under Brinstar Elevator"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_th5w4"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Behind Lower Super Missile Door - Left"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_hp32l"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Behind Lower Super Missile Door - Right"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_56n42"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Ice Beam"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_ch8es"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Heated Room above Ice Beam"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_i23vs"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Hi-Jump"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_lfe0g"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Big Room"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_h3lca"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Behind Top Chozo Statue"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_cyy30"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Larva Ceiling"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_aaneg"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Right Shaft Near Hi-Jump"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_tmauk"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
 location_name = "Right Shaft Bottom"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [node name="Norfair" instance=ExtResource("1_o36ia")]
 texture = ExtResource("2_ss6af")
@@ -143,6 +248,7 @@ data = SubResource("Resource_f2fpx")
 
 [node name="Screw Attack" parent="." index="2" instance=ExtResource("4_4i3ha")]
 position = Vector2(40, 56)
+scale = Vector2(0.5, 0.470588)
 texture = ExtResource("7_38rd8")
 data = SubResource("Resource_khqma")
 
@@ -213,6 +319,7 @@ data = SubResource("Resource_h3lca")
 
 [node name="Larva Ceiling" parent="." index="18" instance=ExtResource("4_4i3ha")]
 position = Vector2(160, 88)
+scale = Vector2(0.5, 0.533333)
 texture = ExtResource("12_iujvo")
 data = SubResource("Resource_cyy30")
 

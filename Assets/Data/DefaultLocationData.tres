@@ -6,3 +6,8 @@
 resource_local_to_scene = true
 script = ExtResource("1_roj24")
 location_name = ""
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0

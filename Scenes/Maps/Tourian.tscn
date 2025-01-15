@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d3xrxxmlj4mj6"]
+[gd_scene load_steps=15 format=3 uid="uid://d3xrxxmlj4mj6"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_ld82v"]
 [ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_tyvjl"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_iixt6"]
 [ext_resource type="Texture2D" uid="uid://bqjgobrliw33a" path="res://Assets/ItemSprites/PowerBombTank.png" id="6_8bbv0"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="7_oj1u8"]
+[ext_resource type="Texture2D" uid="uid://bv2mpji3vr7th" path="res://Assets/BossSprites/MotherBrain.png" id="9_wpcsp"]
 
 [sub_resource type="Resource" id="Resource_8balp"]
 resource_local_to_scene = true
@@ -21,11 +22,31 @@ opened_img = ExtResource("3_yhqa0")
 resource_local_to_scene = true
 script = ExtResource("5_iixt6")
 location_name = "Left of Mother Brain"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
 
 [sub_resource type="Resource" id="Resource_ehict"]
 resource_local_to_scene = true
 script = ExtResource("5_iixt6")
 location_name = "Under Mother Brain"
+prepend_map_name = true
+display_name = ""
+hosted_item = ""
+location_size = 0
+location_border_thickness = 0
+
+[sub_resource type="Resource" id="Resource_isv2v"]
+resource_local_to_scene = true
+script = ExtResource("5_iixt6")
+location_name = "Mother Brain"
+prepend_map_name = false
+display_name = ""
+hosted_item = "mother_brain"
+location_size = 10
+location_border_thickness = 2
 
 [node name="Tourian" instance=ExtResource("1_ld82v")]
 texture = ExtResource("2_xxns0")
@@ -40,10 +61,16 @@ position = Vector2(24, 112)
 texture = ExtResource("6_8bbv0")
 data = SubResource("Resource_ehict")
 
-[node name="PeekBrinstar" parent="." index="2" instance=ExtResource("7_oj1u8")]
+[node name="Mother Brain" parent="." index="2" instance=ExtResource("4_ub1lm")]
+position = Vector2(28, 100)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("9_wpcsp")
+data = SubResource("Resource_isv2v")
+
+[node name="PeekBrinstar" parent="." index="3" instance=ExtResource("7_oj1u8")]
 position = Vector2(40, 16)
 to = "Brinstar"
 
-[node name="PeekCrateria" parent="." index="3" instance=ExtResource("7_oj1u8")]
+[node name="PeekCrateria" parent="." index="4" instance=ExtResource("7_oj1u8")]
 position = Vector2(16, 8)
 to = "Crateria"

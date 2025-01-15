@@ -1,3 +1,4 @@
+# MapData is a data class that backs Map nodes.
 @tool
 class_name MapData extends Resource
 
