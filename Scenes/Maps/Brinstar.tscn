@@ -116,7 +116,7 @@ location_border_thickness = 0
 [sub_resource type="Resource" id="Resource_2mcno"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
-location_name = "Worm drop"
+location_name = "Worm Drop"
 prepend_map_name = true
 display_name = ""
 hosted_item = ""
@@ -126,7 +126,7 @@ location_border_thickness = 0
 [sub_resource type="Resource" id="Resource_8vpem"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
-location_name = "Worm drop"
+location_name = "Worm Drop"
 prepend_map_name = true
 display_name = ""
 hosted_item = ""
@@ -136,7 +136,7 @@ location_border_thickness = 0
 [sub_resource type="Resource" id="Resource_fnjsh"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
-location_name = "Acid near Varia"
+location_name = "Acid Near Varia"
 prepend_map_name = true
 display_name = ""
 hosted_item = ""
@@ -176,7 +176,7 @@ location_border_thickness = 0
 [sub_resource type="Resource" id="Resource_rp7ac"]
 resource_local_to_scene = true
 script = ExtResource("5_u1hm1")
-location_name = "Post-Hive In Wall"
+location_name = "Post-Hive in Wall"
 prepend_map_name = true
 display_name = ""
 hosted_item = ""
@@ -269,17 +269,17 @@ position = Vector2(120, 8)
 texture = ExtResource("12_qjmlp")
 data = SubResource("Resource_jtlmc")
 
-[node name="Worm drop" parent="." index="9" instance=ExtResource("3_5gl4p")]
+[node name="Worm Drop" parent="." index="9" instance=ExtResource("3_5gl4p")]
 position = Vector2(120, 88)
 texture = ExtResource("12_utfhj")
 data = SubResource("Resource_2mcno")
 
-[node name="Worm drop2" parent="." index="10" instance=ExtResource("3_5gl4p")]
+[node name="Worm Drop2" parent="." index="10" instance=ExtResource("3_5gl4p")]
 position = Vector2(192, 56)
 texture = ExtResource("12_utfhj")
 data = SubResource("Resource_8vpem")
 
-[node name="Acid near Varia" parent="." index="11" instance=ExtResource("3_5gl4p")]
+[node name="Acid Near Varia" parent="." index="11" instance=ExtResource("3_5gl4p")]
 position = Vector2(136, 16)
 data = SubResource("Resource_fnjsh")
 
@@ -295,7 +295,7 @@ data = SubResource("Resource_b1i37")
 position = Vector2(144, 72)
 data = SubResource("Resource_q7y0h")
 
-[node name="Post-Hive In Wall" parent="." index="15" instance=ExtResource("3_5gl4p")]
+[node name="Post-Hive in Wall" parent="." index="15" instance=ExtResource("3_5gl4p")]
 position = Vector2(184, 56)
 data = SubResource("Resource_rp7ac")
 

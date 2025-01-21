@@ -166,7 +166,7 @@ location_border_thickness = 0
 [sub_resource type="Resource" id="Resource_ch8es"]
 resource_local_to_scene = true
 script = ExtResource("5_gh606")
-location_name = "Heated Room above Ice Beam"
+location_name = "Heated Room Above Ice Beam"
 prepend_map_name = true
 display_name = ""
 hosted_item = ""
@@ -300,7 +300,7 @@ position = Vector2(136, 24)
 texture = ExtResource("10_qbivu")
 data = SubResource("Resource_56n42")
 
-[node name="Heated Room above Ice Beam" parent="." index="14" instance=ExtResource("4_4i3ha")]
+[node name="Heated Room Above Ice Beam" parent="." index="14" instance=ExtResource("4_4i3ha")]
 position = Vector2(144, 16)
 data = SubResource("Resource_ch8es")
 

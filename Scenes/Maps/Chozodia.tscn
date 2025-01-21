@@ -194,7 +194,7 @@ location_border_thickness = 0
 [sub_resource type="Resource" id="Resource_4ub7e"]
 resource_local_to_scene = true
 script = ExtResource("5_1cdgr")
-location_name = "Southeast Corner In Hull"
+location_name = "Southeast Corner in Hull"
 prepend_map_name = true
 display_name = ""
 hosted_item = ""
@@ -215,7 +215,7 @@ location_border_thickness = 0
 resource_local_to_scene = true
 script = ExtResource("5_1cdgr")
 location_name = "Mecha Ridley"
-prepend_map_name = true
+prepend_map_name = false
 display_name = ""
 hosted_item = "mecha_ridley"
 location_size = 10
@@ -312,7 +312,7 @@ scale = Vector2(0.5, 0.533333)
 texture = ExtResource("8_kon32")
 data = SubResource("Resource_f75ap")
 
-[node name="Southeast Corner In Hull" parent="." index="17" instance=ExtResource("4_lq8bi")]
+[node name="Southeast Corner in Hull" parent="." index="17" instance=ExtResource("4_lq8bi")]
 position = Vector2(208, 120)
 texture = ExtResource("5_m3j6e")
 data = SubResource("Resource_4ub7e")
