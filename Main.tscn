@@ -1,8 +1,8 @@
 [gd_scene load_steps=20 format=3 uid="uid://5jufrjma1ae"]
 
-[ext_resource type="Script" path="res://Main.gd" id="1_goddx"]
+[ext_resource type="Script" uid="uid://cvlotjfa1jbu3" path="res://Main.gd" id="1_goddx"]
 [ext_resource type="PackedScene" uid="uid://colr1p5vww08d" path="res://Scenes/Maps/Brinstar.tscn" id="2_g5r1v"]
-[ext_resource type="Script" path="res://Scripts/MapData.gd" id="3_3bd2g"]
+[ext_resource type="Script" uid="uid://pkhxhsi61p7i" path="res://Scripts/MapData.gd" id="3_3bd2g"]
 [ext_resource type="Texture2D" uid="uid://cwiiyutvbja4a" path="res://Assets/ItemSprites/Checked.png" id="3_xsx6o"]
 [ext_resource type="PackedScene" uid="uid://c2lfsupnovvw" path="res://Scenes/Maps/Chozodia.tscn" id="4_vvghj"]
 [ext_resource type="PackedScene" uid="uid://cp3vo8s35rpif" path="res://Scenes/Maps/Crateria.tscn" id="5_bj0rq"]

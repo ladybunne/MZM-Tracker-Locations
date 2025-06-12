@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_46tpm"]
 [ext_resource type="Texture2D" uid="uid://cgm00yftj7iq4" path="res://Assets/MapSprites/RidleyMap.png" id="2_3n0xj"]
-[ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_gurvp"]
+[ext_resource type="Script" uid="uid://pkhxhsi61p7i" path="res://Scripts/MapData.gd" id="2_gurvp"]
 [ext_resource type="Texture2D" uid="uid://cwiiyutvbja4a" path="res://Assets/ItemSprites/Checked.png" id="3_su1uf"]
 [ext_resource type="PackedScene" uid="uid://lppkt3yjkrmv" path="res://Scenes/Location.tscn" id="4_uupy5"]
-[ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_210y0"]
+[ext_resource type="Script" uid="uid://xqgoqtx0hffi" path="res://Scripts/LocationData.gd" id="5_210y0"]
 [ext_resource type="Texture2D" uid="uid://doekv2dg38vmu" path="res://Assets/ItemSprites/MissileTank.png" id="5_jkd2o"]
 [ext_resource type="Texture2D" uid="uid://c5n1ocow210aj" path="res://Assets/ItemSprites/EnergyTank.png" id="6_6ilp7"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="6_notjh"]
@@ -226,7 +226,7 @@ script = ExtResource("5_210y0")
 location_name = "Ridley"
 prepend_map_name = false
 display_name = ""
-hosted_item = "ridley"
+hosted_item = "Ridley Defeated"
 location_size = 10
 location_border_thickness = 2
 

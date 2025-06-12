@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cmxiejj3vh8rl"]
 
-[ext_resource type="Script" path="res://Scenes/Map.gd" id="1_wau12"]
+[ext_resource type="Script" uid="uid://dcjrspgegmqyo" path="res://Scenes/Map.gd" id="1_wau12"]
 [ext_resource type="Resource" uid="uid://desnid6n0bxmt" path="res://Assets/Data/DefaultMapData.tres" id="2_a74mx"]
 
 [node name="Map" type="Sprite2D"]

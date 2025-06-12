@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="LocationData" load_steps=2 format=3 uid="uid://dusswx1eokw37"]
 
-[ext_resource type="Script" path="res://Scripts/LocationData.gd" id="1_roj24"]
+[ext_resource type="Script" uid="uid://xqgoqtx0hffi" path="res://Scripts/LocationData.gd" id="1_roj24"]
 
 [resource]
 resource_local_to_scene = true

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://lppkt3yjkrmv"]
 
 [ext_resource type="Texture2D" uid="uid://doekv2dg38vmu" path="res://Assets/ItemSprites/MissileTank.png" id="1_bul4g"]
-[ext_resource type="Script" path="res://Scenes/Location.gd" id="1_mrgfl"]
+[ext_resource type="Script" uid="uid://bhj7ktxm4jw42" path="res://Scenes/Location.gd" id="1_mrgfl"]
 [ext_resource type="Resource" uid="uid://dusswx1eokw37" path="res://Assets/Data/DefaultLocationData.tres" id="3_05agv"]
 
 [sub_resource type="Gradient" id="Gradient_r6bmw"]

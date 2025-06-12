@@ -1,12 +1,12 @@
 [gd_scene load_steps=28 format=3 uid="uid://uuxs4u4glabr"]
 
 [ext_resource type="PackedScene" uid="uid://cmxiejj3vh8rl" path="res://Scenes/Map.tscn" id="1_tvprs"]
-[ext_resource type="Script" path="res://Scripts/MapData.gd" id="2_bvs4j"]
+[ext_resource type="Script" uid="uid://pkhxhsi61p7i" path="res://Scripts/MapData.gd" id="2_bvs4j"]
 [ext_resource type="Texture2D" uid="uid://b0atvbvmq23t8" path="res://Assets/MapSprites/KraidMap.png" id="2_thkra"]
 [ext_resource type="Texture2D" uid="uid://cwiiyutvbja4a" path="res://Assets/ItemSprites/Checked.png" id="3_v7tgj"]
 [ext_resource type="PackedScene" uid="uid://lppkt3yjkrmv" path="res://Scenes/Location.tscn" id="4_3tq45"]
 [ext_resource type="Texture2D" uid="uid://doekv2dg38vmu" path="res://Assets/ItemSprites/MissileTank.png" id="5_286hx"]
-[ext_resource type="Script" path="res://Scripts/LocationData.gd" id="5_w7tn0"]
+[ext_resource type="Script" uid="uid://xqgoqtx0hffi" path="res://Scripts/LocationData.gd" id="5_w7tn0"]
 [ext_resource type="PackedScene" uid="uid://b0hckmwa6nt8v" path="res://Scenes/MapPeek.tscn" id="6_av42j"]
 [ext_resource type="Texture2D" uid="uid://b4qjc7qn5mpmq" path="res://Assets/ItemSprites/UnknownSpaceJump.png" id="6_yxr82"]
 [ext_resource type="Texture2D" uid="uid://cvsy82w33mrd5" path="res://Assets/ItemSprites/SpeedBooster.png" id="7_bunc3"]
@@ -156,7 +156,7 @@ script = ExtResource("5_w7tn0")
 location_name = "Kraid"
 prepend_map_name = false
 display_name = ""
-hosted_item = "kraid"
+hosted_item = "Kraid Defeated"
 location_size = 10
 location_border_thickness = 2
 
